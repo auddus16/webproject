@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>개인정보 수정</h3>
+            <label for="id"><i class="fa fa-user"></i> ID</label>
+            <input type="text" id="id" name="id" placeholder="auddus16"><br>
+
+            <label for="name"><i class="fa fa-envelope"></i> 이름</label>
+            <input type="text" id="name" name="name" placeholder="황명연"><br>
+
+            <label for="email"><i class="fa fa-address-card-o"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="auddus16@naver.com"><br>
+
+            <label for="studentNum"><i class="fa fa-institution"></i> 학번</label>
+            <input type="text" id="studentNum" name="studentNum" placeholder="201811008"><br>
+
+            <label for="major"><i class="fa fa-institution"></i> 학과</label>
+            <select class="" name="major">
+              <option value="1" selected>컴퓨터과학과</option>
+              <option value="2">의류학과</option>
+              <option value="3">휴먼지능공학과</option>
+              <option value="4">전자공학과</option>
+              <option value="5">전기공학과</option>
+            </select><br>
+
+              <label for="check1"><i class="fa fa-institution"></i> 재학생</label>
+              <input type="radio" name="check1" id="check1" value="1"><br>
+              <label for="check2"><i class="fa fa-institution"></i> 졸업생</label>
+              <input type="radio" name="check2" id="check2" value="2"><br>
+
+              <label for="checkcode"><i class="fa fa-institution"></i> 확인코드</label>
+              <input type="text" id="checkcode" name="checkcode" placeholder="CS0020"><br>
+              <input type="submit" name="submit" value="수정완료">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
