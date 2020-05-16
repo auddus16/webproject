@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<title>회원가입</title>
+  </head>
+  <body>
+<h3>회원가입</h3>
+<hr>
+<div class="container">
+  <label for="id"><b>ID</b></label>
+  <input type="text" placeholder="아이디" name="id" required>
+  <br>
+
+  <label for="pw"><b>Password</b></label>
+  <input type="text" placeholder="비밀번호" name="pw" required>
+  <br>
+
+  <label for="pwcheck"><b>Password check</b></label>
+  <input type="text" placeholder="비밀번호 확인" name="pwcheck" required>
+
+  <button type="submit">확인하기</button>
+  <span>일치합니다.</span>
+  <br>
+
+  <label for="uname"><b>Name</b></label>
+  <input type="text" placeholder="이름" name="uname" required>
+  <br>
+
+  <label for="email"><b>Email</b></label>
+  <input type="text" placeholder="이메일주소" name="email" required>
+  <br>
+
+  <label for="schoolnum"><b>SchoolNumber</b></label>
+  <input type="text" placeholder="학번" name="schoolnum" required>
+  <br>
+
+  <label for="major"><i class="fa fa-institution"></i> 학과</label>
+  <select class="" name="major">
+    <option value="1" selected>컴퓨터과학과</option>
+    <option value="2">의류학과</option>
+    <option value="3">휴먼지능공학과</option>
+    <option value="4">전자공학과</option>
+    <option value="5">전기공학과</option>
+  </select><br>
+
+  <label for="check1"><i class="fa fa-institution"></i> 재학생</label>
+  <input type="radio" name="check1" id="check1" value="1"><br>
+  <label for="check2"><i class="fa fa-institution"></i> 졸업생</label>
+  <input type="radio" name="check2" id="check2" value="2"><br>
+
+  <label for="code"></label>
+  <input type="text" placeholder="코드를 입력하세요" name="code" required>
+  <br><br>
+
+  <button type="submit">회원가입 완료</button>
+
+  </body>
+</html>
