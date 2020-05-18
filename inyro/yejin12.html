@@ -1,15 +1,96 @@
-<!DOCYTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
 <meta charset="utf-8">
+<style>
+  @import url(menubar.css);
+  @import url(menubarpost.css);
+</style>
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
   </head>
   <body>
 <button type="button">이니로</button>
 <hr>
-<div>
-  <button type="button" onclick="location.href='yejin14.html'">1. 공지</button>
-  <button type="button" onclick="location.href='yejin12.2.html'">2. 게시판</button>
-  <button type="button">3. 갤러리</button>
+<div class="topnav">
+  <a class="active" href="#introduction">Introduction</a>
+  <a href="#news">News</a>
+  <a href="#calender">Calender</a>
+  <a href="#about">About</a>
 </div>
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'New')">공지</button>
+  <button class="tablinks" onclick="openCity(event, 'Post')">게시판</button>
+  <button class="tablinks" onclick="openCity(event, 'Photo')">갤러리</button>
+</div>
+
+<!-- Tab content -->
+<div id="New" class="tabcontent">
+  <h3>공지</h3>
+  <p>
+    <ol>
+      <li>NAME</li>
+      <li>NAME</li>
+      <li>NAME</li>
+      <li>NAME</li>
+    </oi>
+    <form>
+      <select name="select">
+        <option value="1" selected>제목</option>
+        <option value="2">작성자</option>
+      </select>
+      <input type="search" placeholder="입력하세요.">
+      <input type="button" value="검색하기">
+    </form>
+  </p>
+</div>
+
+<div id="Post" class="tabcontent">
+  <h3>게시판</h3>
+  <p>
+    <ol>
+    <li>NAME</li>
+    <li>NAME</li>
+    <li>NAME</li>
+    <li>NAME</li>
+  </oi>
+  <form>
+    <select name="select">
+      <option value="1" selected>제목</option>
+      <option value="2">작성자</option>
+    </select>
+    <input type="search" placeholder="입력하세요.">
+    <input type="button" value="검색하기">
+  </form>
+</p>
+</div>
+
+<div id="Photo" class="tabcontent">
+  <h3>갤러리</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
   </body>
 </html>
