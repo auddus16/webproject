@@ -3,25 +3,33 @@
   <head>
     <meta charset="utf-8">
   <title>개인정보수정</title>
+  <script type="text/javascript">
+    var getId=request.getParameter("id");
+    var getName=request.getParameter("name");
+    var getEmail=request.getParameter("email");
+    var getStnum=request.getParameter("studentNum");
+    var getCheckcode=request.getParameter("checkcode");
+  </script>
   </head>
+
   <body>
         <div class="container">
-          <form action="/action_page.php">
+          <form action="myongyeon7.html">
 
             <div class="row">
               <div class="col-50">
                 <h3>개인정보 수정</h3>
                 <label for="id"> ID</label>
-                <input type="text" id="id" name="id" placeholder="auddus16"><br>
+                <input type="text" id="id" name="id" value=""><br>
 
                 <label for="name"> 이름</label>
-                <input type="text" id="name" name="name" placeholder="황명연"><br>
+                <input type="text" id="name" name="name" value=getName><br>
 
                 <label for="email"> Email</label>
-                <input type="text" id="email" name="email" placeholder="auddus16@naver.com"><br>
+                <input type="text" id="email" name="email" value=getEmail ><br>
 
                 <label for="studentNum"> 학번</label>
-                <input type="text" id="studentNum" name="studentNum" placeholder="201811008"><br>
+                <input type="text" id="studentNum" name="studentNum" value=getStnum><br>
 
                 <label for="major"> 학과</label>
                 <select class="" name="major">
@@ -38,7 +46,7 @@
                   <input type="radio" name="check2" id="check2" value="2"><br>
 
                   <label for="checkcode"> 확인코드</label>
-                  <input type="text" id="checkcode" name="checkcode" placeholder="CS0020"><br>
+                  <input type="text" id="checkcode" name="checkcode" value="CS0020"><br>
                   <input type="submit" name="submit" value="수정완료">
               </div>
             </div>

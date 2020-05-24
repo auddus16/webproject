@@ -2,34 +2,34 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-  <title>개인정보 수정</title>
+  <title>개인정보</title>
   </head>
   <body>
         <div class="container">
-          <form action="/action_page.php">
+          <form action="myongyeon8.html" name="memInfor" method="post">
 
             <div class="row">
               <div class="col-50">
                 <h3>개인정보 수정</h3>
                 <label for="id"> ID</label>
-                <input type="text" id="id" name="id" placeholder="auddus16" disabled><br>
+                <input type="text" id="id" name="id" value="auddus16" disabled><br>
 
                 <label for="name"> 이름</label>
-                <input type="text" id="name" name="name" placeholder="황명연"disabled><br>
+                <input type="text" id="name" name="name" value="황명연"disabled><br>
 
                 <label for="email"> Email</label>
-                <input type="text" id="email" name="email" placeholder="auddus16@naver.com"disabled><br>
+                <input type="text" id="email" name="email" value="auddus16@naver.com"disabled><br>
 
                 <label for="studentNum"> 학번</label>
-                <input type="text" id="studentNum" name="studentNum" placeholder="201811008"disabled><br>
+                <input type="text" id="studentNum" name="studentNum" value="201811008"disabled><br>
 
                 <label for="major"> 학과</label>
                 <select class="" name="major" disabled>
-                  <option value="1" selected>컴퓨터과학과</option>
-                  <option value="2">의류학과</option>
-                  <option value="3">휴먼지능공학과</option>
-                  <option value="4">전자공학과</option>
-                  <option value="5">전기공학과</option>
+                  <option value="컴퓨터과학과" selected>컴퓨터과학과</option>
+                  <option value="의류학과">의류학과</option>
+                  <option value="휴먼지능공학과">휴먼지능공학과</option>
+                  <option value="전자공학과">전자공학과</option>
+                  <option value="전기공학과">전기공학과</option>
                 </select><br>
 
                   <label for="check1"> 재학생</label>
@@ -38,8 +38,9 @@
                   <input type="radio" name="check2" id="check2" value="2"><br>
 
                   <label for="checkcode"> 확인코드</label>
-                  <input type="text" id="checkcode" name="checkcode" placeholder="CS0020" disabled><br>
-                  <input type="submit" name="submit" value="수정완료">
+                  <input type="text" id="checkcode" name="checkcode" value="CS0020" disabled><br>
+                  <input type="submit" name="modify" value="수정">
+                  <input type="submit" name="delete" value="탈퇴">
               </div>
             </div>
           </form>
