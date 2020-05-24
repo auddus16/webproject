@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+
     <title>바</title>
     <style media="screen">
       html, body, div {
@@ -43,42 +44,18 @@ ul li a{
     text-decoration: none;
 		color: black;
 }
-    </style><script src="inyro/jquery/jquery-3.5.1.min.js">
-      $(document).ready(function(){
+ul li a:hover{
+  text-decoration: underline;
+}
+ul li a:after{
+  text-decoration: underline;
+}
+    </style>
 
-			var currentIndex = 0;
-			var _offset = 10;
+    <script src="inyro/jquery/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
 
-			var $menuLi = $("#menu-list li");
-			var $line = $("#menu-line");
 
-			$menuLi.on("click", function(){
-
-				var _$this = $(this);
-
-				TweenMax.killTweensOf($line);
-
-				if( _$this.index() > currentIndex ){
-
-					TweenMax.to($line, 0.5, {css: {width:  (_$this.position().left + _$this.outerWidth()) - $line.position().left + _offset/2 }, onComplete:function(){
-						currentIndex = _$this.index();
-						TweenMax.to($line, 0.5, { css:{ left : _$this.position().left - _offset/2, width: _$this.outerWidth() + _offset } })
-					} });
-
-				} else {
-
-					TweenMax.to($line, 0.5, {css: { left: _$this.position().left - _offset/2, width:  ($line.position().left + $line.outerWidth()) - _$this.position().left + _offset/2 }, onComplete:function(){
-						currentIndex = _$this.index();
-						TweenMax.to($line, 0.5, { css:{ width: _$this.outerWidth() + _offset } })
-					} });
-
-				}
-
-			});
-
-		});
-
-    </script>
   </head>
   <body>
     <div id="menu">
@@ -90,6 +67,43 @@ ul li a{
    </ul>
    <div id="menu-line"></div>
 </div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js">
+  $(document).ready(function(){
+
+  var currentIndex = 0;
+  var _offset = 10;
+
+  var $menuLi = $("#menu-list li");
+  var $line = $("#menu-line");
+
+  $menuLi.on("click", function(){
+
+    var _$this = $(this);
+
+    TweenMax.killTweensOf($line);
+
+    if( _$this.index() > currentIndex ){
+
+      TweenMax.to($line, 0.5, {css: {width:  (_$this.position().left + _$this.outerWidth()) - $line.position().left + _offset/2 }, onComplete:function(){
+        currentIndex = _$this.index();
+        TweenMax.to($line, 0.5, { css:{ left : _$this.position().left - _offset/2, width: _$this.outerWidth() + _offset } })
+      } });
+
+    } else {
+
+      TweenMax.to($line, 0.5, {css: { left: _$this.position().left - _offset/2, width:  ($line.position().left + $line.outerWidth()) - _$this.position().left + _offset/2 }, onComplete:function(){
+        currentIndex = _$this.index();
+        TweenMax.to($line, 0.5, { css:{ width: _$this.outerWidth() + _offset } })
+      } });
+
+    }
+
+  });
+
+});
+
+</script> -->
 
   </body>
 </html>
