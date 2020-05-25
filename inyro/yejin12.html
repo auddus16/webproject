@@ -6,27 +6,11 @@
   @import url(menubar.css);
   @import url(menubarpost.css);
 </style>
+<script src="menubarpost.js"></script>
 <script>
-function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.getElementById("mybutton").click();
+});
 </script>
   </head>
   <body>
@@ -41,7 +25,7 @@ function openCity(evt, cityName) {
 
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'New')">공지</button>
+  <button id="mybutton" class="tablinks" onclick="openCity(event, 'New')">공지</button>
   <button class="tablinks" onclick="openCity(event, 'Post')">게시판</button>
   <button class="tablinks" onclick="openCity(event, 'Photo')">갤러리</button>
 </div>
@@ -49,6 +33,7 @@ function openCity(evt, cityName) {
 <!-- Tab content -->
 <div id="New" class="tabcontent">
   <h3>공지</h3>
+  <button onclick="location.href='yejin13.html'">갤러리</button>
   <p>
     <ol>
       <li>NAME</li>
