@@ -6,7 +6,7 @@
   </head>
   <body>
         <div class="container">
-          <form action="myongyeon8.html" name="memInfor" method="post">
+          <form name="memInfor" method="post">
 
             <div class="row">
               <div class="col-50">
@@ -39,8 +39,8 @@
 
                   <label for="checkcode"> 확인코드</label>
                   <input type="text" id="checkcode" name="checkcode" value="CS0020" disabled><br>
-                  <input type="submit" name="modify" value="수정">
-                  <input type="submit" name="delete" value="탈퇴">
+                  <input type="button" name="modify" value="수정" onclick="location.href='myongyeon8_modify.html'">
+                  <input type="button" name="withdraw" value="탈퇴" onclick="location.href='myongyeon8_withdraw.html'">
               </div>
             </div>
           </form>
