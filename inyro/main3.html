@@ -10,39 +10,29 @@
 
   </head>
   <body>
-    <div class="container">
-     <img id="img" width="350px" height="350px" align='top' src="apple.jpg" />
-     <input type='text' id='text' style="width:350px;height:350px;font-size:15px;" value='내눈 설명!'/>
-
-   </div>
-    <div id="menu">
+  <div align='center'>
+    <iframe id="frame" src="main3_1.html" width="700" height="500"></iframe>
+  </div>
+    <div id="menuX" align='center'>
   <ul id="menu-list" style="margin:50px;">
-      <li> <a id="li1" onclick="change1()">내눈!</a></li>
+      <li> <a id="li1" onclick="change1()">활동소개</a></li>
       <li> <a>|</a></li>
-  	  <li> <a id="li2" onclick="change2()">골라하비</a></li>
+  	  <li> <a id="li2" onclick="change2()">게시판</a></li>
       <li> <a>|</a></li>
-  	  <li> <a id="li2" onclick="change3()">뚜벅서울</a></li>
-      <li> <a>|</a></li>
-  	  <li> <a id="li3" onclick="change4()">이니로그램</a></li>
+  	  <li> <a id="li3" onclick="change3()">갤러리</a></li>
    </ul>
    <div id="menu-line"></div>
   <script>
     function change1() {
-      document.getElementById("img").src = "apple.jpg";
-      document.getElementById("text").value = '내눈! 설명';
+      document.getElementById("frame").src = "main3_1.html";
     }
     function change2() {
-      document.getElementById("img").src = "ddoong.png";
-      document.getElementById("text").value = '골라하비 설명';
+      document.getElementById("frame").src = "main3_2.html";
     }
     function change3() {
-      document.getElementById("img").src = "jingjing.jpg";
-      document.getElementById("text").value = '뚜벅서울 설명';
+      document.getElementById("frame").src = "main3_3.html";
     }
-    function change4() {
-      document.getElementById("img").src = "spongebob-image.jpg";
-      document.getElementById("text").value = '이니로그램 설명';
-    }
+
   </script>
 </div>
   </body>
