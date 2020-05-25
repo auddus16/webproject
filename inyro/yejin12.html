@@ -3,6 +3,7 @@
   <head>
 <meta charset="utf-8">
 <style>
+  @import url(inyro2.css);
   @import url(menubar.css);
   @import url(menubarpost.css);
 </style>
@@ -14,8 +15,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </script>
   </head>
   <body>
-<button type="button">이니로</button>
-<hr>
+<!-- <header>
+    <h1>Inyro</h1>
+    <nav>
+      <span onclick="location.href='yunjin2.html'">로그인</span>
+      <span onclick="location.href='yunjin5.html'">회원가입</span>
+      <span onclick="location.href='myongyeon7.html'">프로필</span>
+    </nav>
+</header> -->
+
+<div class="header">
+  <h1>Inyro</h1>
+  <nav>
+    <span onclick="location.href='yunjin2.html'">로그인</span>
+    <span onclick="location.href='yunjin5.html'">회원가입</span>
+    <span onclick="location.href='myongyeon7.html'">프로필</span>
+  </nav>
+
+</div>
+<br><br><br>
 <div class="topnav">
   <a class="active" href="#introduction">Introduction</a>
   <a href="#news">News</a>
@@ -23,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   <a href="#about">About</a>
 </div>
 
+<br>
 <!-- Tab links -->
 <div class="tab">
   <button id="mybutton" class="tablinks" onclick="openCity(event, 'New')">공지</button>
