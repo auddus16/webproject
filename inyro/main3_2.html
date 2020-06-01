@@ -21,11 +21,12 @@
      </ul>
      <div id="menu-line"  align='center'></div>
      <div class="container" align='center'>
-      <img id="img" width="430px" height="430px" src="sangmyung.jpg" />
+      <!-- <img id="img" width="430px" height="430px" src="sangmyung.jpg" /> -->
+      <iframe style="pointer-events:none" id="frame" src="yejin14.html" width="650px" height="430px" frameborder="0"></iframe>
 
     </div>
     </div>
-    <input type='button' id='more' style="font-size:15px;float:right;" value='게시판 더보기'/>
+    <input type='button' id='more' style="font-size:15px;float:right;" value='게시판 더보기' onclick="parent.parent.location.href='yejin12.html'"/>
   </div>
     <!-- <div id="menuX" align='center'>
   <ul id="menu-list">
@@ -43,13 +44,13 @@
   <!-- <input type='button' id='more' style="font-size:15px;" value='게시판 더보기'/> -->
   <script>
     function change1() {
-      document.getElementById("img").src = "sangmyung.jpg";
+      document.getElementById("frame").src = "yejin14.html";
     }
     function change2() {
-      document.getElementById("img").src = "work.png";
+      document.getElementById("frame").src = "yejin15.html";
     }
     function change3() {
-      document.getElementById("img").src = "QnA.jpg";
+      document.getElementById("frame").src = "yejin16.html";
     }
   </script>
 </div>
