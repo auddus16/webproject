@@ -5,8 +5,10 @@
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 10%%;
-  height: 100%;
+  width: 180px;
+  height: 600px;
+  text-align: center;
+
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -38,7 +40,7 @@
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
-  width: 90%;
+  width: 1280px;
   border-left: none;
-  height: 100%;
+  height: 600px;
 }
