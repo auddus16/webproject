@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   </head>
   <body>
 <header>
-  <h1>Inyro</h1>
+  <h1 onclick="location.href='Main.html'">Inyro</h1>
   <nav>
     <span onclick="location.href='yunjin2.html'">로그인</span>
     <span onclick="location.href='yunjin5.html'">회원가입</span>
@@ -26,67 +26,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <br> <br> <br> <br>
 <!-- Tab links -->
 <div class="tab">
-  <button id="mybutton" class="tablinks" onclick="openCity(event, 'New')">공지</button>
-  <button class="tablinks" onclick="openCity(event, 'Post')">게시판</button>
-  <button class="tablinks" onclick="openCity(event, 'Photo')">갤러리</button>
+  <button id="mybutton" class="tablinks" onclick="openCity(event, 'introduction'); A();" >자유</button>
+  <button class="tablinks" onclick="openCity(event, 'introduction'); B();">과제</button>
+  <button class="tablinks" onclick="openCity(event, 'introduction'); C();">Q&A</button>
+  <button class="tablinks" onclick="openCity(event, 'introduction'); D();">갤러리</button>
 </div>
+
 
 <!-- Tab content -->
-<div id="New" class="tabcontent">
-  <h3>공지</h3>
-  <button onclick="location.href='yejin13.html'">작성하기</button>
-  <p>
-    <ol>
-      <li>NAME</li>
-      <li>NAME</li>
-      <li>NAME</li>
-      <li>NAME</li>
-    </oi>
-    <form>
-      <select name="select">
-        <option value="1" selected>제목</option>
-        <option value="2">작성자</option>
-      </select>
-      <input type="search" placeholder="입력하세요.">
-      <input type="button" value="검색하기">
-    </form>
-  </p>
-</div>
+  <div id="introduction" class="tabcontent">
+    <iframe id="frame" src="yejin14.html" width=100% height=100% frameborder="0"></iframe>
+    <script>
+      function A() {
+        document.getElementById("frame").src = "yejin14.html";
+      }
+      function B() {
 
-<div id="Post" class="tabcontent">
-  <h3>게시판</h3>
-  <button onclick="location.href='yejin13.html'">작성하기</button>
-  <p>
-    <ol>
-    <li>NAME</li>
-    <li>NAME</li>
-    <li>NAME</li>
-    <li>NAME</li>
-  </oi>
-  <form>
-    <select name="select">
-      <option value="1" selected>제목</option>
-      <option value="2">작성자</option>
-    </select>
-    <input type="search" placeholder="입력하세요.">
-    <input type="button" value="검색하기">
-  </form>
-</p>
-</div>
+        document.getElementById("frame").src = "yejin15.html";
+      }
+      function C() {
 
-<div id="Photo" class="tabcontent">
-  <h3>갤러리</h3>
-  <button onclick="location.href='yejin13.html'">작성하기</button>
-  <p></p>
-  <form>
-    <select name="select">
-      <option value="1" selected>제목</option>
-      <option value="2">작성자</option>
-    </select>
-    <input type="search" placeholder="입력하세요.">
-    <input type="button" value="검색하기">
-  </form>
-</div>
+        document.getElementById("frame").src = "yejin16.html";
+      }
+      function D() {
+
+        document.getElementById("frame").src = "yejin17.html";
+      }
+
+    </script>
+
+  </div>
 
   </body>
 </html>
