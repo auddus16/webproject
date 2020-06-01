@@ -7,19 +7,13 @@
       @import url(inyrobar.css);
     </style>
     <header>
-      <h1>Inyro</h1>
+      <h1 onclick="location.href='Main.html'">Inyro</h1>
       <nav>
         <span onclick="location.href='yunjin2.html'">로그인</span>
         <span onclick="location.href='yunjin5.html'">회원가입</span>
         <span onclick="location.href='myongyeon7.html'">프로필</span>
       </nav>
     </header>
-    <!-- <script type="text/javascript">
-      funtion alert_8(){
-        alert('탈퇴되었습니다.');
-        // location.href=""
-      }
-    </script> -->
   </head>
   <body>
     <div class="container">
@@ -30,9 +24,21 @@
         <input type="text" id="usrname" name="usrname" required> -->
         <label for="psw">Password</label>
         <input type="password" id="psw" name="psw">
-        <input type="submit" value="ENTER" onclick="alert('탈퇴되었습니다.')">
+        <input type="button" value="ENTER" onclick="goto();">
       </form>
     </div>
+    <script type="text/javascript">
+      function goto(){
+        var confirmflag = confirm("정말로 탈퇴하시겠습니까?");
+        if(confirmflag){
+          alert("탈퇴되었습니다.");
+          location.href="Main.html";
+        }
+        else{
+          location.href="myongyeon7.html";
+        }
+      }
+    </script>
 
   </body>
 </html>
