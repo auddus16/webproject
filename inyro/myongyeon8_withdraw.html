@@ -5,6 +5,16 @@
     <title>비밀번호 확인</title>
     <style media="screen">
       @import url(inyrobar.css);
+      .container{
+        position: relative;
+        width:100%;
+      }
+      .checkpwd{
+        position: absolute;
+        top: 50%;
+        left: 36.5%;
+        margin: auto;
+      }
     </style>
     <header>
       <h1 onclick="location.href='Main.html'">Inyro</h1>
@@ -17,15 +27,19 @@
   </head>
   <body>
     <div class="container">
+      <div class="checkpwd">
       <form>
-        <br><br><br>
-        <h3>비밀번호 확인</h3>
+        <br><br><br><br>
+        <h2 style="margin-top:20px; margin-bottom:20px">비밀번호 확인</h2>
         <!-- <label for="usrname">Username</label>
         <input type="text" id="usrname" name="usrname" required> -->
-        <label for="psw">Password</label>
-        <input type="password" id="psw" name="psw">
-        <input type="button" value="ENTER" onclick="goto();">
+        <label for="psw"><b> Password</b></label>
+        <input type="password" id="psw" name="psw" style="width:500px; height:35px; margin-bottom:15px;">
+        <div class="btpwd" align="center">
+            <input type="button" value="확인" onclick="goto();"style="width:100px; height:35px;">
+        </div>
       </form>
+      </div>
     </div>
     <script type="text/javascript">
       function goto(){

@@ -6,6 +6,16 @@
   <style media="screen">
     @import url(inyrobar.css);
     @import url(menubar.css);
+    .container{
+      position: relative;
+      width:100%;
+    }
+    .formInfor{
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      margin: auto;
+    }
   </style>
   <header>
     <h1 onclick="location.href='Main.html'">Inyro</h1>
@@ -17,44 +27,38 @@
   </header>
   </head>
   <body>
-        <div class="container" margin=10px>
+        <div class="container">
           <form name="memInfor" method="post">
-            <div class="row">
-              <div class="col-50">
-                <br><br><br>
-                <h3>개인정보 수정</h3>
-                <label for="id"><b> ID</b></label>
-                <input type="text" id="id" name="id" value="auddus16" disabled><br>
+              <div class="formInfor">
+                <br><br><br><br>
+                <h2 style="margin-top:20px; margin-bottom:20px">개인정보</h2>
+                <label for="id" style="margin-bottom:20px;"><b> 아이디</b></label><br>
+                <input type="text" id="id" name="id" value="auddus16" style="width:500px; height:35px; margin-bottom:15px;"disabled><br>
 
-                <label for="name"><b> 이름</b></label>
-                <input type="text" id="name" name="name" value="황명연"disabled><br>
+                <label for="name"><b> 이름</b></label><br>
+                <input type="text" id="name" name="name" value="황명연" style="width:500px; height:35px; margin-bottom:15px;"disabled><br>
 
-                <label for="email"><b> Email</b></label>
-                <input type="text" id="email" name="email" value="auddus16@naver.com"disabled><br>
+                <label for="email"><b> 이메일</b></label><br>
+                <input type="text" id="email" name="email" value="auddus16@naver.com" style="width:500px; height:35px; margin-bottom:15px;"disabled><br>
 
-                <label for="studentNum"><b> 학번</b></label>
-                <input type="text" id="studentNum" name="studentNum" value="201811008"disabled><br>
+                <label for="studentNum"><b> 학번</b></label><br>
+                <input type="text" id="studentNum" name="studentNum" value="201811008" style="width:500px; height:35px; margin-bottom:15px;"disabled><br>
 
-                <label for="major"><b> 학과</b></label>
-                <select class="" name="major" disabled>
-                  <option value="컴퓨터과학과" selected>컴퓨터과학과</option>
-                  <option value="의류학과">의류학과</option>
-                  <option value="휴먼지능공학과">휴먼지능공학과</option>
-                  <option value="전자공학과">전자공학과</option>
-                  <option value="전기공학과">전기공학과</option>
-                </select><br>
+                <label for="major"><b> 학과</b></label><br>
+                <input type="text" id="major" name="major" value="컴퓨터과학과"style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
 
                   <label for="check1"><b> 재학생</b></label>
-                  <input type="radio" name="check1" id="check1" value="1" disabled><br>
+                  <input type="radio" name="check1" id="check1" value="1" disabled>
                   <label for="check2"><b> 졸업생</label>
-                  <input type="radio" name="check2" id="check2" value="2"><br>
+                  <input type="radio" name="check2" id="check2" value="2" style="margin-bottom:15px;"checked><br>
 
-                  <label for="checkcode"><b> 확인코드</b></label>
-                  <input type="text" id="checkcode" name="checkcode" value="CS0020" disabled><br>
-                  <input type="button" name="modify" value="수정" onclick="location.href='myongyeon8_modify.html'">
-                  <input type="button" name="withdraw" value="탈퇴" onclick="location.href='myongyeon8_withdraw.html'">
+                  <label for="checkcode"><b> 확인코드</b></label><br>
+                  <input type="text" id="checkcode" name="checkcode" value="CS0020"style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
+                  <div class="btInfor"align="center">
+                  <input type="button" name="modify" value="수정" onclick="location.href='myongyeon8_modify.html'" style="width:100px; height:30px; margin-right:10px">
+                  <input type="button" name="withdraw" value="탈퇴" onclick="location.href='myongyeon8_withdraw.html'" style="width:100px; height:30px; margin-left:10px">
+                </div>
               </div>
-            </div>
           </form>
         </div>
   </body>
