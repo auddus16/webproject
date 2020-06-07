@@ -5,9 +5,15 @@
 <title>아이디 찾기</title>
 <style>
   @import url(inyrobar.css);
+
+  #item{
+    align-items: center;
+    width: 32%;
+    text-align: left;
+  }
 </style>
 <header>
-  <<h1 onclick="location.href='Main.html'">Inyro</h1>
+  <h1 onclick="location.href='Main.html'">Inyro</h1>
   <nav>
     <span onclick="location.href='yunjin2.html'">로그인</span>
     <span onclick="location.href='yunjin5.html'">회원가입</span>
@@ -17,18 +23,43 @@
   </head>
   <body>
     <br><br><br>
-<h3>아이디 찾기</h3>
-<hr>
-<div class="container">
-    <label for="uname"><b>Username</b></label>
+
+<div class="container" align='center'>
+  <div id="item">
+    <h2 style="margin-top:40px; margin-bottom:20px">아이디 찾기</h2>
+    <label for="uname"><b>이름</b></label>
+    <br>
+    <input type="text" placeholder="이름" name="uname" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="email"><b>이메일주소</b></label>
+    <br>
+    <input type="text" placeholder="이메일주소"  name="email" style="width:500px; height:35px; margin-bottom:15px;" required>
+
+    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;">인증번호받기</button>
+    <br><br>
+
+    <label for="certification"><b></b></label>
+    <input type="text" placeholder="인증번호입력" name="certification" style="width:500px; height:35px; margin-bottom:15px;" required>
+
+    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;">Enter</button>
+    <br>
+    <hr>
+    <p>아이디는 ****** 입니다.</p>
+    <br>
+  </div>
+    <!-- <h2 style="margin-top:40px; margin-bottom:20px">아이디 찾기</h2>
+    <label for="uname"><b>이름</b></label>
+    <br>
     <input type="text" placeholder="이름" name="uname" required>
     <br>
 
-    <label for="email"><b>Email</b></label>
+    <label for="email"><b>이메일주소</b></label>
+    <br>
     <input type="text" placeholder="이메일주소"  name="email" required>
 
     <button type="submit">인증번호받기</button>
-    <br>
+    <br><br>
 
     <label for="certification"><b></b></label>
     <input type="text" placeholder="인증번호입력" name="certification" required>
@@ -37,9 +68,9 @@
     <br>
     <hr>
     <p>아이디는 ****** 입니다.</p>
-    <br>
+    <br> -->
 
-    <button type="submit" onclick="location.href='yunjin2.html'">로그인하기</button>
+    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin2.html'">로그인하기</button>
 
   </body>
 </html>

@@ -5,6 +5,12 @@
 <title>회원가입</title>
 <style>
   @import url(inyrobar.css);
+
+  #item{
+    align-items: center;
+    width: 32%;
+    text-align: left;
+  }
 </style>
 <header>
   <h1 onclick="location.href='Main.html'">Inyro</h1>
@@ -17,37 +23,97 @@
   </head>
   <body>
     <br><br><br>
-<h3>회원가입</h3>
-<hr>
-<div class="container">
-  <label for="id"><b>ID</b></label>
+
+<div class="container" align='center'>
+  <div id="item">
+    <h2 style="margin-top:40px; margin-bottom:20px">회원가입</h2>
+    <label for="id"><b>아이디</b></label>
+    <br>
+    <input type="text" placeholder="아이디" name="id" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="pw"><b>비밀번호</b></label>
+    <br>
+    <input type="text" placeholder="비밀번호" name="pw" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="pwcheck"><b>비밀번호 확인</b></label>
+    <br>
+    <input type="text" placeholder="비밀번호 확인" name="pwcheck" style="width:500px; height:35px; margin-bottom:15px;" required>
+
+    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;">확인하기</button>
+    <span>일치합니다.</span>
+    <br>
+
+    <label for="uname"><b>이름</b></label>
+    <br>
+    <input type="text" placeholder="이름" name="uname" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="email"><b>이메일주소</b></label>
+    <br>
+    <input type="text" placeholder="이메일주소" name="email" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="schoolnum"><b>학번</b></label>
+    <br>
+    <input type="text" placeholder="학번" name="schoolnum" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="major"><i class="fa fa-institution"></i><b>학과</b></label>
+    <select class="" name="major" style="width:500px; height:35px; margin-bottom:15px;">
+      <option value="1" selected>컴퓨터과학과</option>
+      <option value="2">의류학과</option>
+      <option value="3">휴먼지능공학과</option>
+      <option value="4">전자공학과</option>
+      <option value="5">전기공학과</option>
+    </select><br>
+
+    <label for="check1"style="width:500px; height:35px; margin-bottom:15px;"><i class="fa fa-institution"></i> <b>재학생</b></label>
+    <input type="radio" name="check1" id="check1" value="1"><br>
+    <label for="check2"style="width:500px; height:35px; margin-bottom:15px;"><i class="fa fa-institution"></i> <b>졸업생</b></label>
+    <input type="radio" name="check2" id="check2" value="2"><br>
+
+    <label for="code"></label>
+    <br>
+    <input type="text" placeholder="코드를 입력하세요" name="code" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br><br>
+  </div>
+  <!-- <h2 style="margin-top:40px; margin-bottom:20px">회원가입</h2>
+  <label for="id"><b>아이디</b></label>
+  <br>
   <input type="text" placeholder="아이디" name="id" required>
   <br>
 
-  <label for="pw"><b>Password</b></label>
+  <label for="pw"><b>비밀번호</b></label>
+  <br>
   <input type="text" placeholder="비밀번호" name="pw" required>
   <br>
 
-  <label for="pwcheck"><b>Password check</b></label>
+  <label for="pwcheck"><b>비밀번호 확인</b></label>
+  <br>
   <input type="text" placeholder="비밀번호 확인" name="pwcheck" required>
 
   <button type="submit">확인하기</button>
   <span>일치합니다.</span>
   <br>
 
-  <label for="uname"><b>Name</b></label>
+  <label for="uname"><b>이름</b></label>
+  <br>
   <input type="text" placeholder="이름" name="uname" required>
   <br>
 
-  <label for="email"><b>Email</b></label>
+  <label for="email"><b>이메일주소</b></label>
+  <br>
   <input type="text" placeholder="이메일주소" name="email" required>
   <br>
 
-  <label for="schoolnum"><b>SchoolNumber</b></label>
+  <label for="schoolnum"><b>학번</b></label>
+  <br>
   <input type="text" placeholder="학번" name="schoolnum" required>
   <br>
 
-  <label for="major"><i class="fa fa-institution"></i> 학과</label>
+  <label for="major"><i class="fa fa-institution"></i><b>학과</b></label>
   <select class="" name="major">
     <option value="1" selected>컴퓨터과학과</option>
     <option value="2">의류학과</option>
@@ -56,16 +122,16 @@
     <option value="5">전기공학과</option>
   </select><br>
 
-  <label for="check1"><i class="fa fa-institution"></i> 재학생</label>
+  <label for="check1"><i class="fa fa-institution"></i> <b>재학생</b></label>
   <input type="radio" name="check1" id="check1" value="1"><br>
-  <label for="check2"><i class="fa fa-institution"></i> 졸업생</label>
+  <label for="check2"><i class="fa fa-institution"></i> <b>졸업생</b></label>
   <input type="radio" name="check2" id="check2" value="2"><br>
 
   <label for="code"></label>
   <input type="text" placeholder="코드를 입력하세요" name="code" required>
-  <br><br>
+  <br><br> -->
 
-  <button type="submit" onclick="location.href='yunjin2.html'">회원가입 완료</button>
+  <button type="submit" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin2.html'">회원가입 완료</button>
 
   </body>
 </html>

@@ -6,6 +6,12 @@
 <style>
   @import url(inyrobar.css);
   @import url(menubar.css);
+
+  #item{
+    align-items: center;
+    width: 32%;
+    text-align: left;
+  }
 </style>
 <header>
   <h1 onclick="location.href='Main.html'">Inyro</h1>
@@ -26,23 +32,39 @@
   </head>
   <body>
     <br><br><br>
-<h3 align='middle'>로그인</h3>
-<hr>
-<div class="container" align='middle'>
-    <label for="id"><b>Id</b></label>
+<!-- <h2 align='center' style="margin-top:20px; margin-bottom:20px">로그인</h2> -->
+<div class="container" align='center'>
+  <div id="item">
+    <h2 style="margin-top:40px; margin-bottom:20px">로그인</h2>
+    <label for="id"><b>아이디</b></label>
+    <br>
+    <input type="text" placeholder="아이디" name="id" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="psw"><b>비밀번호</b></label>
+    <br>
+    <input type="password" placeholder="비밀번호" name="psw" style="width:500px; height:35px; margin-bottom:15px;" required>
+
+  </div>
+    <!-- <label for="id"><b>아이디</b></label>
+    <br>
     <input type="text" placeholder="아이디" name="id" required>
     <br>
 
-    <label for="psw"><b>Password</b></label>
+    <label for="psw"><b>비밀번호</b></label>
+    <br>
     <input type="password" placeholder="비밀번호" name="psw" required>
 
-    <button type="submit">로그인</button>
+    <button type="submit" onclick="location.href='Main.html'">로그인</button>
+    <br><br> -->
+
+    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='Main.html'">로그인</button>
     <br><br>
 
-    <button type="button" onclick="location.href='yunjin3.html'">ID찾기</button>
-    <span>|</span>
-    <button type="button" onclick="location.href='yunjin4.html'">비밀번호찾기</button>
-    <span>|</span>
-    <button type="button" onclick="location.href='yunjin5.html'">회원가입</button>
+    <button type="button" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin3.html'">ID찾기</button>
+    <span><b>|</b></span>
+    <button type="button" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin4.html'">비밀번호찾기</button>
+    <span><b>|</b></span>
+    <button type="button" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin5.html'">회원가입</button>
   </body>
 </html>

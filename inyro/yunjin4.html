@@ -5,6 +5,12 @@
 <title>비밀번호 찾기</title>
 <style>
   @import url(inyrobar.css);
+
+  #item{
+    align-items: center;
+    width: 32%;
+    text-align: left;
+  }
 </style>
 <header>
   <h1 onclick="location.href='Main.html'">Inyro</h1>
@@ -17,18 +23,56 @@
   </head>
   <body>
     <br><br><br>
-<h3>비밀번호 찾기</h3>
-<hr>
-<div class="container">
-    <label for="id"><b>ID</b></label>
+
+<div class="container" align='center'>
+  <div id="item">
+    <h2 style="margin-top:40px; margin-bottom:20px">비밀번호 찾기</h2>
+    <label for="id"><b>아이디</b></label>
+    <br>
+    <input type="text" placeholder="아이디" name="id" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="email"><b>이메일주소</b></label>
+    <br>
+    <input type="text" placeholder="이메일주소" name="email" style="width:500px; height:35px; margin-bottom:15px;" required>
+
+    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;">인증번호받기</button>
+    <br><br>
+
+    <label for="certification"><b></b></label>
+    <input type="text" placeholder="인증번호입력" name="certification" style="width:500px; height:35px; margin-bottom:15px;" required>
+
+    <button type="submit"style="width:100px; height:30px; margin-bottom:10px;" >Enter</button>
+    <br>
+    <hr>
+    <h2>설정하기</h2>
+    <br>
+
+    <label for="newpw"><b>새로운 비밀번호</b></label>
+    <br>
+    <input type="text" placeholder="새로운 비밀번호" name="newpw" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <br>
+
+    <label for="newpwcheck"><b>비밀번호 확인</b></label>
+    <br>
+    <input type="text" placeholder="비밀번호 확인" name="newpwcheck" style="width:500px; height:35px; margin-bottom:15px;" required>
+
+    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;">확인하기</button>
+    <span>일치합니다.</span>
+    <br><br>
+
+  </div>
+    <!-- <label for="id"><b>아이디</b></label>
+    <br>
     <input type="text" placeholder="아이디" name="id" required>
     <br>
 
-    <label for="email"><b>Email</b></label>
+    <label for="email"><b>이메일주소</b></label>
+    <br>
     <input type="text" placeholder="이메일주소" name="email" required>
 
     <button type="submit">인증번호받기</button>
-    <br>
+    <br><br>
 
     <label for="certification"><b></b></label>
     <input type="text" placeholder="인증번호입력" name="certification" required>
@@ -36,20 +80,23 @@
     <button type="submit">Enter</button>
     <br>
     <hr>
-    <p>설정하기</p>
-
-    <label for="newpw"><b>New Password</b></label>
-    <input type="text" placeholder="새로운 비밀번호 입력" name="newpw" required>
+    <p><b>설정하기</b></p>
     <br>
 
-    <label for="newpwcheck"><b>New Password check</b></label>
+    <label for="newpw"><b>새로운 비밀번호</b></label>
+    <br>
+    <input type="text" placeholder="새로운 비밀번호" name="newpw" required>
+    <br>
+
+    <label for="newpwcheck"><b>비밀번호 확인</b></label>
+    <br>
     <input type="text" placeholder="비밀번호 확인" name="newpwcheck" required>
 
     <button type="submit">확인하기</button>
     <span>일치합니다.</span>
-    <br>
+    <br><br> -->
 
-    <button type="submit" onclick="location.href='yunjin2.html'">로그인하기</button>
+    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin2.html'">로그인하기</button>
 
   </body>
 </html>
