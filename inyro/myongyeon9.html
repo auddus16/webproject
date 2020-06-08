@@ -5,15 +5,14 @@
   <title>개인정보수정</title>
   <style media="screen">
     @import url(inyrobar.css);
-    .container{
+    /* .container{
       position: relative;
       width:100%;
-    }
+    } */
     .formInfor{
-      position: absolute;
-      top: 50%;
-      left: 37%;
-      margin: auto;
+      align-items: center;
+      text-align: left;
+      width: 33%;
     }
   </style>
   <header>
@@ -34,22 +33,22 @@
   </head>
 
   <body>
-        <div class="container">
+        <div class="container" align="center">
           <form name="memInfor" method="post">
               <div class="formInfor">
                 <br><br><br><br>
                 <h2 style="margin-top:20px; margin-bottom:20px">개인정보 수정</h2>
                 <label for="id" style="margin-bottom:20px;"><b> 아이디</b></label><br>
-                <input type="text" id="id" name="id" value="auddus16" style="width:500px; height:35px; margin-bottom:15px;"disabled><br>
+                <input type="text" id="id" name="id" value="auddus16" style="width:500px; height:35px; margin-bottom:15px;"><br>
 
                 <label for="name"><b> 이름</b></label><br>
-                <input type="text" id="name" name="name" value="황명연" style="width:500px; height:35px; margin-bottom:15px;"disabled><br>
+                <input type="text" id="name" name="name" value="황명연" style="width:500px; height:35px; margin-bottom:15px;"><br>
 
                 <label for="email"><b> 이메일</b></label><br>
-                <input type="text" id="email" name="email" value="auddus16@naver.com" style="width:500px; height:35px; margin-bottom:15px;"disabled><br>
+                <input type="text" id="email" name="email" value="auddus16@naver.com" style="width:500px; height:35px; margin-bottom:15px;"><br>
 
                 <label for="studentNum"><b> 학번</b></label><br>
-                <input type="text" id="studentNum" name="studentNum" value="201811008" style="width:500px; height:35px; margin-bottom:15px;"disabled><br>
+                <input type="text" id="studentNum" name="studentNum" value="201811008" style="width:500px; height:35px; margin-bottom:15px;"><br>
 
                 <label for="major"><b> 학과</b></label><br>
                 <select class="major" name="major" style="width:500px; height:35px; margin-bottom:15px;">
@@ -63,10 +62,10 @@
                   <label for="check1"><b> 재학생</b></label>
                   <input type="radio" name="check1" id="check1" value="1">
                   <label for="check2"><b> 졸업생</label>
-                  <input type="radio" name="check2" id="check2" value="2" style="margin-bottom:15px;"checked><br>
+                  <input type="radio" name="check2" id="check2" value="2" style="margin-bottom:15px;"><br>
 
                   <label for="checkcode"><b> 확인코드</b></label><br>
-                  <input type="text" id="checkcode" name="checkcode" value="CS0020"style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
+                  <input type="text" id="checkcode" name="checkcode" value="CS0020"style="width:500px; height:35px; margin-bottom:15px;"><br>
                   <div class="btInfor"align="center">
                   <input type="button" name="modify" value="수정 완료" onclick="location.href='myongyeon7.html'" style="width:100px; height:30px; margin-right:10px">
                 </div>
