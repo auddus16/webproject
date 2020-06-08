@@ -75,29 +75,35 @@ ul li a:after{
       <li> <a>|</a></li>
   	  <li> <a id="li4" onclick="change4()">이니로그램</a></li>
    </ul>
-   <div id="menu-line"></div>
-   <div class="container" float='left'>
-    <img id="img" width="300px" height="530px" src="myeyes.png" align='middle'/>
+   <!-- <div id="menu-line"></div> -->
+   <div class="container">
+     <div float='left' style="display:inline-block;" >
+       <img id="img" width="320px" height="530px" src="myeyes.png" align='middle'/>
+     </div>
     <!-- <input type='textarea' id='text' cols='2' rows='2' wrap='hard' style="width:350px;height:450px;font-size:25px;border:none;" value='주기적으로 화면이 깜빡이면서 눈 깜빡임을 유도하는 앱'/> -->
-    <p id="text" style="width:350px;height:450px;font-size:25px;">주기적으로 화면이 깜빡이면서 눈 깜빡임을 유도하는 앱</p>
+    <div id="text" float='left' style="display:inline-block;text-align:center;width:400px;height:450px;font-size:25px;">
+      주기적으로 화면이 깜빡이면서<br>눈 깜빡임을 유도하는 앱
+    </div>
+
+    <!-- <p id="text" style="width:350px;height:450px;font-size:25px;">주기적으로 화면이 깜빡이면서 눈 깜빡임을 유도하는 앱</p> -->
 
   </div>
   <script>
     function change1() {
       document.getElementById("img").src = "myeyes.png";
-      document.getElementById("text").value = '내눈! 설명';
+      document.getElementById("text").innerHTML = '주기적으로 화면이 깜빡이면서<br>눈 깜빡임을 유도하는 앱';
     }
     function change2() {
       document.getElementById("img").src = "golla.png";
-      document.getElementById("text").value = '골라하비 설명';
+      document.getElementById("text").innerHTML = '간단한 테스트를 통해 각자의 성향에 맞는 취미를 추천해주는 앱';
     }
     function change3() {
       document.getElementById("img").src = "ddubuck.png";
-      document.getElementById("text").value = '뚜벅서울 설명';
+      document.getElementById("text").innerHTML = '서울 탐방 코스를 추천해주는 앱';
     }
     function change4() {
       document.getElementById("img").src = "inyrogram.png";
-      document.getElementById("text").value = '이니로그램 설명';
+      document.getElementById("text").innerHTML = '인☆';
     }
   </script>
 </div>
