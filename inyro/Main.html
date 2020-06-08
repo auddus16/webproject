@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>Inyro</title>
     <style media="screen">
-      @import url(inyrobar.css);
       @import url(menubar.css);
+      @import url(inyrobar.css);
+      @import url(background.css);
     </style>
+    <script src="menubar.js"></script>
     <header>
       <h1 onclick="location.href='Main.html'">INYRO</h1>
       <nav>
@@ -20,13 +22,13 @@
     <br><br><br>
     <nav style="position:fixed;">
       <div class="topnav">
-        <a class="active" href="#introduction">Introduction</a>
-        <a href="#activity">Activity</a>
-        <a href="#about">About</a>
-        <a href="#executive">Executive</a>
+        <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='#introduction';">Introduction</a>
+        <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='#activity';">Activity</a>
+        <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='#about';">About</a>
+        <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='#executive';">Executive</a>
       </div>
     </nav>
-      <br><br>
+      <br><br><br>
       <section align="center" style="margin-bottom:100px">
           <img src="main1_1.png" width="80%">
       </section>
