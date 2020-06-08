@@ -2,6 +2,7 @@
 .topnav {
   background-color: #4D79F8;
   overflow: hidden;
+  display:flex;
 }
 
 /* Style the links inside the navigation bar */
@@ -12,17 +13,19 @@
   padding: 14px 154px;
   text-decoration: none;
   font-size: 17px;
+  display:flex;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #9DB5FE;
   color: white;
+  display:flex;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #F8736C;
   color: black;
-  
+display:flex;
 }

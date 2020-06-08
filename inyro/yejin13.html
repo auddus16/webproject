@@ -6,17 +6,20 @@
   </head>
   <body align="center">
 <h2>글 작성하기</h2><br>
-<form align='middle'>
+<form align='middle' method="post" enctype="multipart/form-data">
   <pre>
-      <input rows="70" type="text" placeholder="제목을 입력하세요.">
-      <select name="option">
-        <option value="1" selected>자유</option>
-        <option value="2">과제</option>
-        <option value="3">QNA</option>
-        <option value="4">갤러리</option>
-      </select> <br>
-      <textarea cols="70" rows="27" placeholder="내용을 입력하세요."></textarea> <br>
-      <button onclick="location.href='yejin12.html'">등록하기</button>
+      <input rows="70" type="text" placeholder="제목을 입력하세요." style="width:500px; height:35px; margin-bottom:15px;" required>
+      <select style="position:absolute; top:170px; left:395px; width:175px; height:30px; " name="option">
+        <option text-align:center; value="1" selected>자유</option>
+        <option text-align:center; value="2">과제</option>
+        <option text-align:center; value="3">QNA</option>
+        <option text-align:center; value="4">갤러리</option>
+      </select>
+      <br>
+      <input style="position:absolute; top:172px; left:600px;  height:35px;" type="file" name="FileName">
+
+      <textarea  cols="68" rows="18" placeholder="내용을 입력하세요."></textarea> <br>
+      <button onclick="parent.location.href='yejin12.html'" style="width:100px; height:30px; margin-right:10px">등록하기</button>
   </pre>
   </body>
 </html>
