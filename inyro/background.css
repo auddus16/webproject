@@ -4,3 +4,23 @@ body{
 *{
   font-family: sans-serif;
 }
+div button{
+  background-color: #D5B6EA;
+  border: none;
+  border-radius: 5px;
+}
+.mybt{
+  background-color: #D5B6EA;
+  border: none;
+  border-radius: 5px;
+}
+.yjbtn{
+  background-color: #D5B6EA;
+  border: none;
+  border-radius: 5px;
+}
+/* .yjbt{
+  background-color: skyBlue;
+  border: none;
+  border-radius: 5px;
+} */
