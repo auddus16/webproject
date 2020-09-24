@@ -1,5 +1,5 @@
 <?php
-$mysql_host="localhost";
+$mysql_host="172.16.24.191";
 $mysql_user="auddus16";
 $mysql_password="1234";
 $mysql_db="inyro";
