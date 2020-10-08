@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php
+include("./dbconn.php");
+
+$mode = "modify";
+$title = "회원가입";
+$modify_mb_info = '';
+
+$sql="INSERT INTO major VALUES(101, '전기공학과')";
+$result=mysqli_query($conn, $sql);
+
+?>
 <html>
   <head>
 <meta charset="utf-8">
@@ -24,45 +35,47 @@
   </head>
   <body>
     <br><br><br>
+    <form action="./register_update.php" onsubmit="return fregisterform_submit(this);" method="post">
+      <input type="hidden" name="mode" value="<?php echo $mode ?>">
 
 <div class="container" align='center'>
   <div id="item">
     <h2 style="margin-top:40px; margin-bottom:20px">회원가입</h2>
     <label for="id"><b>아이디</b></label>
     <br>
-    <input type="text" placeholder="아이디" name="id" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <input type="text" placeholder="아이디" name="mb_id" style="width:500px; height:35px; margin-bottom:15px;" required>
     <br>
 
     <label for="pw"><b>비밀번호</b></label>
     <br>
-    <input type="text" placeholder="비밀번호" name="pw" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <input type="password" placeholder="비밀번호" name="mb_password" style="width:500px; height:35px; margin-bottom:15px;" required>
     <br>
 
     <label for="pwcheck"><b>비밀번호 확인</b></label>
     <br>
-    <input type="text" placeholder="비밀번호 확인" name="pwcheck" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <input type="password" placeholder="비밀번호 확인" name="mb_password_re" style="width:500px; height:35px; margin-bottom:15px;" required>
 
-    <button type="submit" style="width:100px; height:30px; margin-bottom:10px;">확인하기</button>
+    <!-- <button type="submit" style="width:100px; height:30px; margin-bottom:10px;">확인하기</button>
     <span>일치합니다.</span>
-    <br>
+    <br> -->
 
     <label for="uname"><b>이름</b></label>
     <br>
-    <input type="text" placeholder="이름" name="uname" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <input type="text" placeholder="이름" name="mb_name" style="width:500px; height:35px; margin-bottom:15px;" required>
     <br>
 
     <label for="email"><b>이메일주소</b></label>
     <br>
-    <input type="text" placeholder="이메일주소" name="email" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <input type="text" placeholder="이메일주소" name="mb_email" style="width:500px; height:35px; margin-bottom:15px;" required>
     <br>
 
     <label for="schoolnum"><b>학번</b></label>
     <br>
-    <input type="text" placeholder="학번" name="schoolnum" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <input type="text" placeholder="학번" name="studentnum" style="width:500px; height:35px; margin-bottom:15px;" required>
     <br>
 
     <label for="major"><i class="fa fa-institution"></i><b>학과</b></label>
-    <select class="" name="major" style="width:500px; height:35px; margin-bottom:15px;">
+    <select class="" name="mb_major" style="width:500px; height:35px; margin-bottom:15px;">
       <option value="1" selected>컴퓨터과학과</option>
       <option value="2">의류학과</option>
       <option value="3">휴먼지능공학과</option>
@@ -71,13 +84,13 @@
     </select><br>
 
     <label for="check1"style="width:500px; height:35px; margin-bottom:15px;"><i class="fa fa-institution"></i> <b>재학생</b></label>
-    <input type="radio" name="check1" id="check1" value="1"><br>
+    <input type="radio" name="mb_graduated" id="check1" value="1"><br>
     <label for="check1"style="width:500px; height:35px; margin-bottom:15px;"><i class="fa fa-institution"></i> <b>졸업생</b></label>
-    <input type="radio" name="check1" id="check2" value="2"><br>
+    <input type="radio" name="mb_graduated" id="check2" value="2"><br>
 
     <label for="code"></label>
     <br>
-    <input type="text" placeholder="코드를 입력하세요" name="code" style="width:500px; height:35px; margin-bottom:15px;" required>
+    <input type="text" placeholder="코드를 입력하세요" name="mb_code" style="width:500px; height:35px; margin-bottom:15px;" required>
     <br><br>
   </div>
   <!-- <h2 style="margin-top:40px; margin-bottom:20px">회원가입</h2>
