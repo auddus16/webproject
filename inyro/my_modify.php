@@ -29,25 +29,34 @@ include("./dbconn_yj.php");
   </header>
   </head>
   <body>
+    <?php
+    $mb_id = $_SESSION['ss_mb_id'];
+
+    $sql = " SELECT * FROM member WHERE mb_id = TRIM('$mb_id') ";
+    $result = mysqli_query($conn, $sql);
+    $mb = mysqli_fetch_assoc($result);
+
+    mysqli_close($conn); // 데이터베이스 접속 종료
+    ?>
         <div class="container" align="center">
           <form action="./my_modify_update.php"name="memInfor" method="post">
               <div class="formInfor">
                 <br><br><br><br>
                 <h2 style="margin-top:20px; margin-bottom:20px">개인정보</h2>
                 <label for="id" style="margin-bottom:20px;"><b> 아이디</b></label><br>
-                <input type="text"  name="mb_id" value="<?php echo $mb['mb_id'] ?>" style="width:500px; height:35px; margin-bottom:15px;"><br>
+                <input type="text"  name="mb_id" value="<?php echo $mb['mb_id'] ?>" style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
 
                 <label for="name"><b> 이름</b></label><br>
-                <input type="text" name="mb_name" value="<?php echo $mb['mb_name'] ?>" style="width:500px; height:35px; margin-bottom:15px;"><br>
+                <input type="text" name="mb_name" value="<?php echo $mb['mb_name'] ?>" style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
 
                 <label for="email"><b> 이메일</b></label><br>
-                <input type="text" name="mb_email" value="<?php echo $mb['mb_email'] ?>" style="width:500px; height:35px; margin-bottom:15px;"><br>
+                <input type="text" name="mb_email" value="<?php echo $mb['mb_email'] ?>" style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
 
                 <label for="studentNum"><b> 학번</b></label><br>
-                <input type="text" name="mb_studentnum" value="<?php echo $mb['mb_studentnum'] ?>" style="width:500px; height:35px; margin-bottom:15px;"><br>
+                <input type="text" name="mb_studentnum" value="<?php echo $mb['mb_studentnum'] ?>" style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
 
                 <label for="major"><b> 학과</b></label><br>
-                <input type="text" name="mb_major" value="<?php echo $mb['mb_major'] ?>"style="width:500px; height:35px; margin-bottom:15px;"><br>
+                <input type="text" name="mb_major" value="<?php echo $mb['mb_major'] ?>"style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
 
                   <label for="check1"><b> 재학생</b></label>
                   <input type="radio" name="check1" id="check1" value="1" disabled>
