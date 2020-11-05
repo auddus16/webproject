@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include("./dbconn_yj.php");
+?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -19,15 +22,15 @@
   <header>
     <h1 onclick="location.href='Main.html'">INYRO</h1>
     <nav>
-      <span onclick="location.href='yunjin2.html'">로그인</span>
-      <span onclick="location.href='yunjin5.html'">회원가입</span>
+      <span onclick="location.href='yj_login.php'">로그인</span>
+      <span onclick="location.href='yj_register.php'">회원가입</span>
       <span onclick="location.href='myongyeon7.html'">프로필</span>
     </nav>
   </header>
   </head>
   <body>
-        <div class="container" align="center" method="get">
-          <form action="./my_modify.php"name="memInfor" method="post">
+        <div class="container" align="center">
+          <form action="./my_modify_update.php"name="memInfor" method="post">
               <div class="formInfor">
                 <br><br><br><br>
                 <h2 style="margin-top:20px; margin-bottom:20px">개인정보</h2>
