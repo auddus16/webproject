@@ -9,7 +9,7 @@
   </head>
   <body align="center">
     <h2>자유 게시판</h2>
-    <button class="yjbtn" style="width:100px; height:30px; position:absolute;top:90px; left:360px;" action="location.href='pyj_post.php'">작성하기</button>
+    <button class="yjbtn" style="width:100px; height:30px; position:absolute;top:90px; left:360px;" onclick="location.href='pyj_post.php'">작성하기</button>
     <iframe style="position:absolute;top:120px; left:350px;" src="yejinframe1.html" width=50% height=400px frameborder="0"></iframe>
     <form style="position:absolute;top:90px; left:650px;  ">
       <select name="select" style="height:30px;">

@@ -39,7 +39,7 @@ $modify_mb_info = '';
       </select>
       <input  class="yjbt" style="position:absolute; top:172px; left:600px;   border:1px solid black;" type="file" name="post_file" value="<?php echo $post['post_file'] ?>" >
       <input  cols="75" rows="15" placeholder="내용을 입력하세요." name="post_text" value="<?php echo $post['post_text'] ?>" >   <br>
-      <button class="yjbtn" onclick="parent.location.href='yejin12.html'" style="width:100px; height:30px; margin-right:10px">등록하기</button>
+      <button class="yjbtn" onclick="parent.location.href='pyj_post_update.php'" style="width:100px; height:30px; margin-right:10px">등록하기</button>
   </pre>
   </body>
 </html>

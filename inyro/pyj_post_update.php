@@ -35,19 +35,19 @@ $post_ip				= trim($_POST['post_ip']);
 
 if (!$mb_id) {
 	echo "<script>alert('아이디가 넘어오지 않았습니다.');</script>";
-	echo "<script>location.replace('./pyj_post.php');</script>";
+	echo "<script>location.replace('./yejin12.php');</script>";
 	exit;
 }
 
 if (!$post_title) {
 	echo "<script>alert('글 제목이 없습니다..');</script>";
-	echo "<script>location.replace('./pyj_post.php');</script>";
+	echo "<script>location.replace('./yejin12.php');</script>";
 	exit;
 }
 
 if (!$post_text) {
 	echo "<script>alert('글 내용이 없습니다.');</script>";
-	echo "<script>location.replace('./pyj_post.php');</script>";
+	echo "<script>location.replace('./yejin12.php');</script>";
 	exit;
 }
 
