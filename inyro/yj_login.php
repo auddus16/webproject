@@ -20,7 +20,7 @@ include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
   <header>
     <h1 onclick="location.href='Main.php'">INYRO</h1>
     <nav>
-      <span onclick="location.href='yj_login.php'">로그인</span>
+      <span id="test" onclick="location.href='yj_login.php'">로그인</span>
       <span onclick="location.href='yj_register.php'">회원가입</span>
       <span onclick="location.href='my_profile.php'">프로필</span>
     </nav>
@@ -71,6 +71,9 @@ include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
 <?php } else { // 로그인 세션이 없을 경우 로그인 완료 화면 ?>
 <br><br><br>
 <h2>로그인을 환영합니다.</h2>
+<script type="text/javascript">
+  document.getElementById("test").innerHTML = "로그아웃";
+</script>
 
   <?php
   $mb_id = $_SESSION['ss_mb_id'];
