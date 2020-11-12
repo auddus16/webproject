@@ -12,23 +12,13 @@ $modify_mb_info = '';
 <meta charset="utf-8">
 <title>회원가입</title>
 <style>
-  @import url(inyrobar.css);
-  @import url(background.css);
-
   #item{
     align-items: center;
     width: 33%;
     text-align: left;
   }
 </style>
-<header>
-  <h1 onclick="location.href='Main.php'">INYRO</h1>
-  <nav>
-    <span onclick="location.href='yj_login.php'">로그인</span>
-    <span onclick="location.href='yj_register.php'">회원가입</span>
-    <span onclick="location.href='my_profile.php'">프로필</span>
-  </nav>
-</header>
+<?php include("headbar.php") ?>
   </head>
   <body>
     <br><br><br>

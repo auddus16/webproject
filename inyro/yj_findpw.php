@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<?php
-include "./dbconn_yj.php";
-if($_POST["mb_id"] == "" || $_POST["mb_email"] == ""){
-		echo '<script> alert("항목을 입력하세요"); history.back();</script>';
-	}else{
-    $mb_id = trim($_POST['mb_id']);
-    $mb_email = trim($_POST['mb_email']);
+<html>
+  <head>
+<meta charset="utf-8">
+<title>비밀번호 찾기</title>
+<style>
+  #item{
+    align-items: center;
+    width: 33%;
+    text-align: left;
+  }
+</style>
+<?php include("headbar.php") ?>
+  </head>
+  <body>
+    <br><br><br>
 
-    $_SESSION['ss_mb_id_check'] = $mb_id;
+<div class="container" align='center'>
+  <form method="post" action="yj_findpw_php.php">
+  <div id="item">
+    <h2 style="margin-top:40px; margin-bottom:20px">비밀번호 찾기</h2>
+    <label for="mb_id"><b>아이디</b></label>
+    <br>
+    <input type="text" placeholder="아이디" name="mb_id" style="width:500px; height:35px; margin-bottom:15px;">
+    <br>
 
+    <label for="mb_email"><b>이메일주소</b></label>
+    <br>
+    <input type="text" placeholder="이메일주소" name="mb_email" style="width:500px; height:35px; margin-bottom:15px;">
 
-    $sql = "SELECT * FROM member where mb_id = '$mb_id' AND mb_email = '$mb_email' ";
-    $result = mysqli_query($conn, $sql);
-    $mb = mysqli_fetch_assoc($result);
-    mysqli_close($conn);
+    </div>
+    <button type="submit" name="findpw" style="width:100px; height:30px; margin-bottom:10px;">확인</button>
 
+  </form>
 
-    if($mb["mb_id"] == $mb_id){
-    	// echo "<script>alert('".$mb['mb_name']."님의 ID는 ".$mb['mb_id']."입니다.'); </script>";
-      echo "<script>location.replace('./yj_pwupdate.html');</script>";
+  </div>
+</div>
 
-    }else{
-    echo "<script>alert('없는 계정입니다.'); history.back();</script>";
-    }
+    <!-- <button type="submit" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin2.html'">로그인하기</button> -->
 
-}
-?>
+  </body>
+</html>

@@ -17,14 +17,7 @@ include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
       text-align: left;
     }
   </style>
-  <header>
-    <h1 onclick="location.href='Main.php'">INYRO</h1>
-    <nav>
-      <span id="test" onclick="location.href='yj_login.php'">로그인</span>
-      <span onclick="location.href='yj_register.php'">회원가입</span>
-      <span onclick="location.href='my_profile.php'">프로필</span>
-    </nav>
-  </header>
+  <?php include("headbar.php") ?>
 </head>
 <body>
   <?php if(!isset($_SESSION['ss_mb_id'])) { // 로그인 세션이 있을 경우 로그인 화면 ?>
@@ -61,9 +54,9 @@ include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
   <button type="submit" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='Main.php'">로그인</button>
   <br><br>
 
-  <button type="button" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yj_findid.html'">ID 찾기</button>
+  <button type="button" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yj_findid.php'">ID 찾기</button>
   <span><b>|</b></span>
-  <button type="button" style="width:110px; height:30px; margin-bottom:10px;" onclick="location.href='yj_findpw.html'">비밀번호 찾기</button>
+  <button type="button" style="width:110px; height:30px; margin-bottom:10px;" onclick="location.href='yj_findpw.php'">비밀번호 찾기</button>
   <span><b>|</b></span>
   <button type="button" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yj_register.php'">회원가입</button>
   </form>

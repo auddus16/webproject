@@ -1,42 +1,43 @@
-<?php
-include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php를 인클루드합니다.
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<title>비밀번호 찾기</title>
+<style>
+  #item{
+    align-items: center;
+    width: 33%;
+    text-align: left;
+  }
+</style>
+<?php include("headbar.php") ?>
 
-$title = "새로운 비밀번호 설정하기";
+  </head>
+  <body>
+    <br><br><br>
 
-$mb_id = $_SESSION['ss_mb_id_check'];
+<div class="container" align='center'>
+  <form method="post" action="yj_pwupdate_php.php">
 
-// $mb_id = trim($_POST['mb_id']);
-$mb_password			= trim($_POST['mb_password']); // 첫번째 입력 패스워드
-$mb_password_re		= trim($_POST['mb_password_re']); // 두번째 입력 패스워드
+    <div id="item">
+    <h2 style="margin-top:40px; margin-bottom:20px">새로운 비밀번호 설정하기</h2>
 
-// echo "<script>alert('$mb_id');</script>";
-// echo "<script>alert('$mb_password');</script>";
+    <label for="newpw"><b>새로운 비밀번호</b></label>
+    <input type="password" placeholder="새로운 비밀번호" name="mb_password" style="width:500px; height:35px; margin-bottom:15px;">
+    <br>
 
-if ($mb_password != $mb_password_re) {
-	echo "<script>alert('비밀번호가 일치하지 않습니다.');</script>";
-	echo "<script>location.replace('./yj_pwupdate.html');</script>";
-	exit;
-}
+    <label for="newpwcheck"><b>비밀번호 확인</b></label>
+    <br>
+    <input type="password" placeholder="비밀번호 확인" name="mb_password_re" style="width:500px; height:35px; margin-bottom:15px;" >
 
+    <!-- <button type="submit" style="width:100px; height:30px; margin-bottom:10px;">확인하기</button>
+    <span>일치합니다.</span>
+    <br><br> -->
 
-$sql = " SELECT PASSWORD('$mb_password') AS mb_password "; // 입력한 비밀번호를 MySQL password() 함수를 이용해 암호화해서 가져옴
-$result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
-$mb_password = $row['mb_password'];
+  </div>
+  <button type="submit" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yj_login.php'">확인</button>
+  </form>
+  </div>
 
-
-
-$sql = "UPDATE member SET mb_password = '$mb_password' WHERE mb_id = '$mb_id' ";
-
-$result = mysqli_query($conn, $sql);
-
-if($result == false){
-	echo mysqli_connect_error($conn);
-}
-
-echo "<script>alert('비밀번호가 재설정되었습니다.');</script>";
-echo "<script>location.replace('./yj_login.php');</script>";
-
-
-mysqli_close($conn); // 데이터베이스 접속 종료
-?>
+  </body>
+</html>
