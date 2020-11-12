@@ -13,15 +13,13 @@ include("./dbconn_pyj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
 //   die("연결실패".mysqli_connect_error());
 // }
 
-$mode = $_POST['mode'];
+// $mode = $_POST['mode'];
 $mb_id=$_SESSION['ss_mb_id'];
+// $title = "글 작성하기";
 
-
-$title = "글 작성하기";
-
-$mb_id = trim($_POST['mb_id']);
+// $mb_id = trim($_POST['mb_id']);
 $post_title = trim($_POST['post_title']);
-$post_category_id		= ($_POST['post_category_id']);
+$post_category_id		= trim($_POST['post_category_id']);
 $post_datatime				= date('Y-m-d H:i:s', time());
 $post_text				= trim($_POST['post_text']);
 $post_file	= trim($_POST['post_file']);
@@ -34,14 +32,6 @@ $post_delete_datetime	= date('Y-m-d H:i:s', time());
 $post_del				= trim($_POST['post_del']);
 $post_ip				= trim($_POST['post_ip']);
 
-
-
-// $mb_gender				= $_POST['mb_gender']; // 성별
-// $mb_job					= $_POST['mb_job']; // 직업
-// $mb_ip					= $_SERVER['REMOTE_ADDR']; // 접속 아이피
-// $mb_language			= implode(",", $_POST['mb_language']); // 관심언어 (,) 구분으로 저장
-// $mb_datetime			= date('Y-m-d H:i:s', time()); // 가입일
-// $mb_modify_datetime	= date('Y-m-d H:i:s', time()); // 수정일
 
 if (!$mb_id) {
 	echo "<script>alert('아이디가 넘어오지 않았습니다.');</script>";
@@ -76,7 +66,7 @@ if (!$post_text) {
 // 					 -- mb_ip = '$mb_ip',
 // 					 -- mb_language = '$mb_language',
 // 					 -- mb_datetime = '$mb_datetime' ";
-echo $mb_name;
+// echo $mb_name;
 
 $sql = "INSERT INTO post VALUES ('NULL', '$mb_id', '$post_title' , '$post_category_id', current_timestamp(), '$post_text', '$post_file', 'NULL', 20, 10, 23, current_timestamp(), current_timestamp(), '5','192.172.10.3')";
 
