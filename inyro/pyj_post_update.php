@@ -15,7 +15,7 @@ include("./dbconn_pyj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
 
 $mode = $_POST['mode'];
 $mb_id=$_SESSION['ss_mb_id'];
-// echo "<script>alert('$mb_id');</script>";
+
 
 $title = "글 작성하기";
 
