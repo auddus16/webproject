@@ -19,9 +19,9 @@ $mb_id=$_SESSION['ss_mb_id'];
 
 $title = "글 작성하기";
 
-$mb_id2 = trim($_POST['mb_id']);
+$mb_id = trim($_POST['mb_id']);
 $post_title = trim($_POST['post_title']);
-$post_catagory_id		= ($_POST['post_catagory_id']);
+$post_category_id		= ($_POST['post_category_id']);
 $post_datatime				= date('Y-m-d H:i:s', time());
 $post_text				= trim($_POST['post_text']);
 $post_file	= trim($_POST['post_file']);
@@ -43,7 +43,7 @@ $post_ip				= trim($_POST['post_ip']);
 // $mb_datetime			= date('Y-m-d H:i:s', time()); // 가입일
 // $mb_modify_datetime	= date('Y-m-d H:i:s', time()); // 수정일
 
-if (!$mb_id2) {
+if (!$mb_id) {
 	echo "<script>alert('아이디가 넘어오지 않았습니다.');</script>";
 	echo "<script>location.replace('./pyj_post.php');</script>";
 	exit;
@@ -78,7 +78,7 @@ if (!$post_text) {
 // 					 -- mb_datetime = '$mb_datetime' ";
 echo $mb_name;
 
-$sql = "INSERT INTO post VALUES ('NULL', '$mb_id2', '$post_title' , '$post_catagory_id', current_timestamp(), '$post_text', '$post_file', 'NULL', 20, 10, 23, current_timestamp(), current_timestamp(), '5','192.172.10.3')";
+$sql = "INSERT INTO post VALUES ('NULL', '$mb_id', '$post_title' , '$post_category_id', current_timestamp(), '$post_text', '$post_file', 'NULL', 20, 10, 23, current_timestamp(), current_timestamp(), '5','192.172.10.3')";
 
 $result = mysqli_query($conn, $sql);
 

@@ -23,10 +23,10 @@ $modify_mb_info = '';
   <pre>
       <input rows="70" type="text" placeholder="제목을 입력하세요." name="post_title" style="width:500px; height:35px; margin-bottom:15px;" value="<?php echo $post['post_title'] ?>" >
       <select style="position:absolute; top:170px; left:411px; width:175px; height:30px; " name="option">
-        <option text-align:center; value="1" selected>자유</option>
-        <option text-align:center; value="2">과제</option>
-        <option text-align:center; value="3">QNA</option>
-        <option text-align:center; value="4">갤러리</option>
+        <option text-align:center; value="1" <?php echo ($post['post_category_id'] == "자유") ? "selected" : "";?> >자유 </option>
+        <option text-align:center; value="2" <?php echo ($post['post_category_id'] == "과제") ? "selected" : "";?> >과제 </option>
+        <option text-align:center; value="3"<?php echo ($post['post_category_id'] == "QNA") ? "selected" : "";?> >QNA </option>
+        <option text-align:center; value="4"<?php echo ($post['post_category_id'] == "갤러리") ? "selected" : "";?> >갤러리 </option>
       </select>
 
 
