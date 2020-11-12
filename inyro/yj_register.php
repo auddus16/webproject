@@ -71,14 +71,13 @@ $modify_mb_info = '';
     <input type="text" placeholder="학번" name="mb_studentnum" style="width:500px; height:35px; margin-bottom:15px;" value="<?php echo $mb['mb_studentnum'] ?>" >
     <br>
 
-    <!-- <label for="major"><i class="fa fa-institution"></i><b>학과</b></label>
+    <label for="major"><i class="fa fa-institution"></i><b>학과</b></label>
     <select class="" name="mb_major_id" style="width:500px; height:35px; margin-bottom:15px;">
-      <option value="컴퓨터과학과" <?php echo ($mb['mb_major'] == "컴퓨터과학과") ? "selected" : "";?> >컴퓨터과학과</option>
-      <option value="의류학과" <?php echo ($mb['mb_major'] == "의류학과") ? "selected" : "";?>>의류학과</option>
-      <option value="휴먼지능공학과" <?php echo ($mb['mb_major'] == "휴먼지능공학과") ? "selected" : "";?>>휴먼지능공학과</option>
-      <option value="전자공학과" <?php echo ($mb['mb_major'] == "전자공학과") ? "selected" : "";?>>전자공학과</option>
-      <option value="전기공학과" <?php echo ($mb['mb_major'] == "전기공학과") ? "selected" : "";?>>전기공학과</option>
-    </select><br> -->
+      <option value=100 <?php echo ($mb['mb_major_id'] == "컴퓨터과학") ? "selected" : "";?> >컴퓨터과학과</option>
+      <option value=101 <?php echo ($mb['mb_major_id'] == "전기공학과") ? "selected" : "";?>>전기공학과</option>
+      <option value=102 <?php echo ($mb['mb_major_id'] == "게임학과") ? "selected" : "";?>>게임학과</option>
+      <option value=103 <?php echo ($mb['mb_major_id'] == "휴먼지능공학과") ? "selected" : "";?>>휴먼지능공학과</option>
+    </select><br>
 
     <!-- // <label for="check1"style="width:500px; height:35px; margin-bottom:15px;"><i class="fa fa-institution"></i> <b>재학생</b></label>
     // <input type="radio" name="mb_graduated" id="check1" value="1"><br>

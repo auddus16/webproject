@@ -96,7 +96,7 @@ if (mysqli_num_rows($result) > 0) { // 만약 사용중인 아이디라면 알�
 // 					 -- mb_datetime = '$mb_datetime' ";
 echo $mb_name;
 
-$sql = "INSERT INTO member VALUES ('NULL', '$mb_studentnum', '$mb_name' , '$mb_id', '$mb_password', 100, '$mb_graduated', 'code', current_timestamp(), 'code', current_timestamp(), current_timestamp(), '$mb_email')";
+$sql = "INSERT INTO member VALUES ('NULL', '$mb_studentnum', '$mb_name' , '$mb_id', '$mb_password', '$mb_major_id', '$mb_graduated', 'code', current_timestamp(), 'code', current_timestamp(), current_timestamp(), '$mb_email')";
 
 $result = mysqli_query($conn, $sql);
 

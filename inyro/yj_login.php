@@ -20,9 +20,9 @@ include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
   <header>
     <h1 onclick="location.href='Main.html'">INYRO</h1>
     <nav>
-      <span onclick="location.href='yunjin2.html'">로그인</span>
-      <span onclick="location.href='yj_register.html'">회원가입</span>
-      <span onclick="location.href='myongyeon7.html'">프로필</span>
+      <span onclick="location.href='yj_login.php'">로그인</span>
+      <span onclick="location.href='yj_register.php'">회원가입</span>
+      <span onclick="location.href='my_profile.php'">프로필</span>
     </nav>
   </header>
 </head>
@@ -61,7 +61,7 @@ include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
   <button type="submit" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='Main.html'">로그인</button>
   <br><br>
 
-  <button type="button" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin3.html'">ID 찾기</button>
+  <button type="button" style="width:100px; height:30px; margin-bottom:10px;" onclick="location.href='yj_findid.html'">ID 찾기</button>
   <span><b>|</b></span>
   <button type="button" style="width:110px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin4.html'">비밀번호 찾기</button>
   <span><b>|</b></span>
