@@ -3,26 +3,24 @@
   <head>
 <meta charset="utf-8">
 <style>
-  @import url(inyrobar.css);
+  /* @import url(inyrobar.css); */
   @import url(menubarpost.css);
-  @import url(background.css);
+  /* @import url(background.css); */
 </style>
+
 <script src="menubarpost.js"></script>
 <script>
+
 document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementById("mybutton").click();
 });
 </script>
+<?php
+session_start();
+include("headbar.php") ?>
   </head>
   <body>
-<header>
-  <h1 onclick="location.href='Main.html'">INYRO</h1>
-  <nav>
-    <span onclick="location.href='yunjin2.html'">로그인</span>
-    <span onclick="location.href='yunjin5.html'">회원가입</span>
-    <span onclick="location.href='myongyeon7.html'">프로필</span>
-  </nav>
-</header>
+
 <br> <br> <br> <br>
 <!-- Tab links -->
 <div class="tab">

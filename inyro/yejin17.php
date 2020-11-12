@@ -11,6 +11,6 @@
     <br>
     <button class="yjbtn" style="width:100px; height:30px; margin-right:10px" onclick="location.href='pyj_post.php'">작성하기</button>
     <br> <br> <br>
-    <iframe src="yejinframe4.html" width=100% height=330px frameborder="0"></iframe>
+    <iframe src="yejinframe4.php" width=100% height=330px frameborder="0"></iframe>
   </body>
 </html>
