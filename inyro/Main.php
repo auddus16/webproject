@@ -26,7 +26,7 @@
         <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='#activity';">Activity</a>
         <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='#about';">About</a>
         <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='#executive';">Executive</a>
-        <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='yejin12.html';">Post</a>
+        <a class="tablinks" onclick="openCity(event, 'introduction'); location.href='yejin12.php';">Post</a>
       </div>
     </nav>
       <br><br><br>
