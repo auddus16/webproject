@@ -32,15 +32,15 @@ if (!$mb_new_email) {
 	echo "<script>location.replace('./my_modify.php');</script>";
 	exit;
 }
-
-$sql = " SELECT * FROM member WHERE mb_id = '$mb_new_id' "; // 회원가입을 시도하는 아이디가 사용중인 아이디인지 체크
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) { // 만약 사용중인 아이디라면 알림창을 띄우고 회원가입 페이지로 이동
-	echo "<script>alert('이미 사용중인 회원아이디 입니다.');</script>";
-	echo "<script>location.replace('./my_modify.php');</script>";
-	exit;
-}
+//
+// $sql = " SELECT * FROM member WHERE mb_id = '$mb_new_id' "; // 회원가입을 시도하는 아이디가 사용중인 아이디인지 체크
+// $result = mysqli_query($conn, $sql);
+//
+// if (mysqli_num_rows($result) > 0) { // 만약 사용중인 아이디라면 알림창을 띄우고 회원가입 페이지로 이동
+// 	echo "<script>alert('이미 사용중인 회원아이디 입니다.');</script>";
+// 	echo "<script>location.replace('./my_modify.php');</script>";
+// 	exit;
+// }
 
 echo $mb_new_name;
 
@@ -60,6 +60,7 @@ $result = mysqli_query($conn, $sql);
 
 if($result == false){echo mysqli_connect_error($conn);}
 echo "회원정보가 수정되었습니다.";
+echo"<script>location.replace('./my_profile.php');</script>";
 
 
 mysqli_close($conn); // 데이터베이스 접속 종료

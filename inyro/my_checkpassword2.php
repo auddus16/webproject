@@ -31,7 +31,7 @@ include("./dbconn_my.php");
   <body>
     <div class="container" align="center">
       <div class="checkpwd">
-      <form action="./my_checkpassword_check.php" method="post">
+      <form action="./my_checkpassword2_check.php" method="post">
         <br><br><br><br>
         <h2 style="margin-top:20px; margin-bottom:20px">비밀번호 확인</h2>
         <!-- <label for="usrname">Username</label>
@@ -39,7 +39,7 @@ include("./dbconn_my.php");
         <label for="psw"><b> Password</b></label>
         <input type="password" id="psw" name="mb_password" style="width:500px; height:35px; margin-bottom:15px;">
         <div class="btpwd" align="center">
-            <input class="mybt" type="submit" value="확인" style="width:100px; height:35px;" onclick="location.href='my_checkpassword.php'">
+            <input class="mybt" type="button" value="확인" style="width:100px; height:35px;" onclick="location.href='my_checkpassword.php'">
         </div>
       </form>
       </div>
