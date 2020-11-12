@@ -8,7 +8,7 @@ if($_POST["mb_name"] == "" || $_POST["mb_email"] == ""){
     $mb_email = trim($_POST['mb_email']);
 
 
-    $sql = "SELECT * FROM member where mb_name = '$mb_name' && mb_email = '$mb_email' ";
+    $sql = "SELECT * FROM member where mb_name = '$mb_name' AND mb_email = '$mb_email' ";
     $result = mysqli_query($conn, $sql);
     $mb = mysqli_fetch_assoc($result);
     mysqli_close($conn);

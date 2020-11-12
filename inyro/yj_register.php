@@ -91,57 +91,7 @@ $modify_mb_info = '';
     <input type="text" placeholder="코드를 입력하세요" name="mb_code" style="width:500px; height:35px; margin-bottom:15px;" required>
     <br><br> -->
   </div>
-  <!-- <h2 style="margin-top:40px; margin-bottom:20px">회원가입</h2>
-  // <label for="id"><b>아이디</b></label>
-  // <br>
-  // <input type="text" placeholder="아이디" name="id" required>
-  // <br>
-  //
-  // <label for="pw"><b>비밀번호</b></label>
-  // <br>
-  // <input type="text" placeholder="비밀번호" name="pw" required>
-  // <br>
-  //
-  // <label for="pwcheck"><b>비밀번호 확인</b></label>
-  // <br>
-  // <input type="text" placeholder="비밀번호 확인" name="pwcheck" required>
-  //
-  // <button type="submit">확인하기</button>
-  // <span>일치합니다.</span>
-  // <br>
-  //
-  // <label for="uname"><b>이름</b></label>
-  // <br>
-  // <input type="text" placeholder="이름" name="uname" required>
-  // <br>
-  //
-  // <label for="email"><b>이메일주소</b></label>
-  // <br>
-  // <input type="text" placeholder="이메일주소" name="email" required>
-  // <br>
-  //
-  // <label for="schoolnum"><b>학번</b></label>
-  // <br>
-  // <input type="text" placeholder="학번" name="schoolnum" required>
-  // <br>
-  //
-  // <label for="major"><i class="fa fa-institution"></i><b>학과</b></label>
-  // <select class="" name="major">
-  //   <option value="1" selected>컴퓨터과학과</option>
-  //   <option value="2">의류학과</option>
-  //   <option value="3">휴먼지능공학과</option>
-  //   <option value="4">전자공학과</option>
-  //   <option value="5">전기공학과</option>
-  // </select><br>
-  //
-  // <label for="check1"><i class="fa fa-institution"></i> <b>재학생</b></label>
-  // <input type="radio" name="check1" id="check1" value="1"><br>
-  // <label for="check2"><i class="fa fa-institution"></i> <b>졸업생</b></label>
-  // <input type="radio" name="check2" id="check2" value="2"><br>
-  //
-  // <label for="code"></label>
-  // <input type="text" placeholder="코드를 입력하세요" name="code" required>
-  // <br><br> -->
+
 
   <button type="submit" style="width:110px; height:30px; margin-bottom:10px;" onclick="location.href='yj_login.php'">회원가입 완료</button>
 
