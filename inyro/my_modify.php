@@ -66,7 +66,7 @@ include("./dbconn_my.php");
                   <!-- <label for="checkcode"><b> 확인코드</b></label><br>
                   <input type="text" id="checkcode" name="checkcode" value="CS0020"style="width:500px; height:35px; margin-bottom:15px;" disabled><br> -->
                   <div class="btInfor"align="center">
-                <input class="mybt" type="submit" name="modify" value="수정 완료" onclick="location.href='my_profile.php.html'" style="width:100px; height:30px; margin-right:10px">
+                <input class="mybt" type="submit" name="modify" value="수정 완료" onclick="location.href='my_profile.php'" style="width:100px; height:30px; margin-right:10px">
                 </div>
               </div>
           </form>
