@@ -6,27 +6,7 @@ include("./dbconn_my.php");
   <head>
     <meta charset="utf-8">
     <title>비밀번호 확인</title>
-    <style media="screen">
-      @import url(inyrobar.css);
-      @import url(background.css);
-      /* .container{
-        position: relative;
-        width:100%;
-      } */
-      .checkpwd{
-        align-items: center;
-        text-align: left;
-        width: 33%;
-      }
-    </style>
-    <header>
-      <h1 onclick="location.href='Main.php'">INYRO</h1>
-      <nav>
-        <span onclick="location.href='yj_login.php'">로그인</span>
-        <span onclick="location.href='yj_register.php'">회원가입</span>
-        <span onclick="location.href='my_profile.php'">프로필</span>
-      </nav>
-    </header>
+    <?php include("headbar.php") ?>
   </head>
   <body>
     <div class="container" align="center">

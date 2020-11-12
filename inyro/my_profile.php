@@ -4,29 +4,9 @@ include("./dbconn_my.php");
 ?>
 <html lang="en" dir="ltr">
   <head>
+  <?php include("headbar.php") ?>
     <meta charset="utf-8">
   <title>개인정보</title>
-  <style media="screen">
-    @import url(inyrobar.css);
-    @import url(background.css);
-    /* .container{
-      position: relative;
-      width:100%;
-    } */
-    .formInfor{
-      align-items: center;
-      text-align: left;
-      width: 33%;
-    }
-  </style>
-  <header>
-    <h1 onclick="location.href='Main.php'">INYRO</h1>
-    <nav>
-      <span onclick="location.href='yj_login.php'">로그인</span>
-      <span onclick="location.href='yj_register.php'">회원가입</span>
-      <span onclick="location.href='my_profile.php'">프로필</span>
-    </nav>
-  </header>
   </head>
   <body>
     <?php
