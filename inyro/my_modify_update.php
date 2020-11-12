@@ -12,8 +12,8 @@ $mb_new_studentnum	= trim($_POST['mb_studentnum']);
 $mb_new_major_id		= ($_POST['mb_major_id']);
 $mb_new_graduated		= ($_POST['mb_graduated']);
 
-echo "<script>alert('$mb_new_id,$mb_new_name,$mb_new_email,$mb_new_studentnum');</script>";
-echo "<script>alert('$mb_id');</script>";
+// echo "<script>alert('$mb_new_id,$mb_new_name,$mb_new_email,$mb_new_studentnum');</script>";
+// echo "<script>alert('$mb_id');</script>";
 if (!$mb_new_id) {
 	echo "<script>alert('아이디가 넘어오지 않았습니다.');</script>";
 	echo "<script>location.replace('./my_modify.php');</script>";

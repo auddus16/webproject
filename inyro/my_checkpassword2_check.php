@@ -7,9 +7,9 @@ $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 $password = $row['mb_password'];
 
-if(isset($_SESSION['ss_mb_id'])) { // 세션이 있다면 로그인 확인 페이지로 이동
-	echo "<script>alert('session확인');</script>";
-}
+// if(isset($_SESSION['ss_mb_id'])) { // 세션이 있다면 로그인 확인 페이지로 이동
+// 	echo "<script>alert('session확인');</script>";
+// }
 
 if (!($password === $mb['mb_password'])) { // 존재하는 아이디인지, 입력한 패스워드가 회원 테이블에 저장된 패스워드와 동일한지 체크
 	echo "<script>alert('비밀번호가 틀립니다.\\n비밀번호는 대소문자를 구분합니다.');</script>";
