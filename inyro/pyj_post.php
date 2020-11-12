@@ -11,12 +11,20 @@ $modify_mb_info = '';
   <head>
 <meta charset="utf-8">
 <style>
-@import url(inyrobar.css);
 @import url(background.css);
 </style>
 
   </head>
   <body align="center">
+    <?php
+    $mb_id = $_SESSION['ss_mb_id'];
+
+    $sql = " SELECT * FROM member WHERE mb_id = TRIM('$mb_id') ";
+    $result = mysqli_query($conn, $sql);
+    $mb = mysqli_fetch_assoc($result);
+
+    mysqli_close($conn); // 데이터베이스 접속 종료
+    ?>
 <h2>글 작성하기</h2><br>
 <form action="./pyj_post_update.php" align='middle' onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data">
   <input type="hidden" name="mode" value="<?php echo $mode ?>">
