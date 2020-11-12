@@ -24,7 +24,7 @@ include("./dbconn_my.php");
     <nav>
       <span onclick="location.href='yj_login.php'">로그인</span>
       <span onclick="location.href='yj_register.php'">회원가입</span>
-      <span onclick="location.href='myongyeon7.html'">프로필</span>
+      <span onclick="location.href='my_profile.php'">프로필</span>
     </nav>
   </header>
   </head>
