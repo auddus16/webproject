@@ -103,7 +103,7 @@ include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
     </tr>
     <tr>
       <td colspan="2" class="td_center">
-        <a href="./my_modify.php">회원정보수정</a>
+        <a href="./my_profile.php">회원정보수정</a>
         <a href="./yj_logout.php">로그아웃</a>
       </td>
     </tr>
