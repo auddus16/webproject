@@ -32,7 +32,7 @@ include("./dbconn_my.php");
     <?php
     $mb_id = $_SESSION['ss_mb_id'];
 
-    $sql = " SELECT * FROM member WHERE mb_id = TRIM('$mb_id') ";
+    $sql = " SELECT * FROM member join major ON member.mb_major_id=major.mb_major_id WHERE member.mb_id = TRIM('$mb_id')";
     $result = mysqli_query($conn, $sql);
     $mb = mysqli_fetch_assoc($result);
 
@@ -56,12 +56,14 @@ include("./dbconn_my.php");
                 <input type="text" name="mb_studentnum" value="<?php echo $mb['mb_studentnum'] ?>" style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
 
                 <label for="major"><b> 학과</b></label><br>
-                <input type="text" name="mb_major" value="<?php echo $mb['mb_major'] ?>"style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
+                <input type="text" name="mb_major_name" value="<?php echo $mb['mb_major_name'] ?>"style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
 
-                  <label for="check1"><b> 재학생</b></label>
+                <label for="major"><b> 재학/졸업여부</b></label><br>
+                <input type="text" name="mb_graduated" value="<?php echo ($mb['mb_graduated']==1) ?"재학":"졸업" ?>"style="width:500px; height:35px; margin-bottom:15px;" disabled><br>
+                  <!-- <label for="check1"><b> 재학생</b></label>
                   <input type="radio" name="check1" id="check1" value="1" disabled>
                   <label for="check2"><b> 졸업생</label>
-                  <input type="radio" name="check1" id="check2" value="2" style="margin-bottom:15px;"checked><br>
+                  <input type="radio" name="check1" id="check2" value="2" style="margin-bottom:15px;"checked><br> -->
 
                   <!-- <label for="checkcode"><b> 확인코드</b></label><br>
                   <input type="text" id="checkcode" name="checkcode" value="CS0020"style="width:500px; height:35px; margin-bottom:15px;" disabled><br> -->

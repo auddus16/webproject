@@ -39,7 +39,7 @@ include("./dbconn_my.php");
         <label for="psw"><b> Password</b></label>
         <input type="password" id="psw" name="mb_password" style="width:500px; height:35px; margin-bottom:15px;">
         <div class="btpwd" align="center">
-            <input class="mybt" type="button" value="확인" style="width:100px; height:35px;" onclick="location.href='my_checkpassword.php'">
+            <input class="mybt" type="submit" value="확인" style="width:100px; height:35px;" onclick="location.href='my_checkpassword2_check.php'">
         </div>
       </form>
       </div>
