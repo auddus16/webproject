@@ -24,9 +24,9 @@ $modify_mb_info = '';
 <header>
   <h1 onclick="location.href='Main.html'">INYRO</h1>
   <nav>
-    <span onclick="location.href='yunjin2.html'">로그인</span>
-    <span onclick="location.href='yunjin5.html'">회원가입</span>
-    <span onclick="location.href='myongyeon7.html'">프로필</span>
+    <span onclick="location.href='yj_login.php'">로그인</span>
+    <span onclick="location.href='yj_register.php'">회원가입</span>
+    <span onclick="location.href='my_profile.php'">프로필</span>
   </nav>
 </header>
   </head>
@@ -143,7 +143,7 @@ $modify_mb_info = '';
   // <input type="text" placeholder="코드를 입력하세요" name="code" required>
   // <br><br> -->
 
-  <button type="submit" style="width:110px; height:30px; margin-bottom:10px;" onclick="location.href='yunjin2.html'">회원가입 완료</button>
+  <button type="submit" style="width:110px; height:30px; margin-bottom:10px;" onclick="location.href='yj_login.php'">회원가입 완료</button>
 
   </body>
 </html>
