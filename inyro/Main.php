@@ -5,18 +5,12 @@
     <title>Inyro</title>
     <style media="screen">
       @import url(menubar.css);
-      @import url(inyrobar.css);
-      @import url(background.css);
+      /* @import url(inyrobar.css);
+      @import url(background.css); */
     </style>
     <script src="menubar.js"></script>
-    <header>
-      <h1 onclick="location.href='Main.php'">INYRO</h1>
-      <nav>
-        <span onclick="location.href='yj_login.php'">로그인</span>
-        <span onclick="location.href='yj_register.php'">회원가입</span>
-        <span onclick="location.href='my_profile.php'">프로필</span>
-      </nav>
-    </header>
+    <?php
+    session_start(); include("headbar.php") ?>
   </head>
   <body>
     <br><br><br>
