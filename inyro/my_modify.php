@@ -20,7 +20,7 @@ include("./dbconn_my.php");
     }
   </style>
   <header>
-    <h1 onclick="location.href='Main.html'">INYRO</h1>
+    <h1 onclick="location.href='Main.php'">INYRO</h1>
     <nav>
       <span onclick="location.href='yj_login.php'">로그인</span>
       <span onclick="location.href='yj_register.php'">회원가입</span>
