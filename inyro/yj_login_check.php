@@ -6,7 +6,7 @@ $mb_password	= trim($_POST['mb_password']);
 
 if (!$mb_id || !$mb_password) {
 	echo "<script>alert('회원아이디나 비밀번호가 공백이면 안됩니다.');</script>";
-	echo "<script>location.replace('./login.php');</script>";
+	echo "<script>location.replace('./yj_login.php');</script>";
 	exit;
 }
 
