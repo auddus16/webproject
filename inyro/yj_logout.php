@@ -5,7 +5,7 @@ session_destroy(); // 세션해제함
 
 if(!isset($_SESSION['ss_mb_id'])) { // 세션이 삭제되었다면 로그인 페이지로 이동
 	echo "<script>alert('로그아웃 되었습니다.');</script>";
-	echo "<script>location.replace('./yj_login.php');</script>";
+	echo "<script>location.replace('./Main.php');</script>";
 	exit;
 }
 ?>
