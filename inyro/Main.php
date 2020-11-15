@@ -40,7 +40,7 @@
 		</section>
 		<section id="about" class="section3" style="margin-bottom:100px">
 			<div align="center">
-					<iframe id="main3" src="main3.html" width="1400" height="700" frameborder="0"></iframe>
+					<iframe id="main3" src="main3.php" width="1400" height="700" frameborder="0"></iframe>
 			</div>
 		</section>
 		<section id="executive" class="section4" style="margin-bottom:50px">

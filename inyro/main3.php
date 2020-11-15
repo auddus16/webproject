@@ -15,7 +15,7 @@
       <h1 align='center' style="font-size:40px; font-weight: bold">INYRO ABOUT</h1>
     </nav>
   <div align='center'>
-    <iframe id="frame" src="main3_1.html" width="830" height="490" frameborder="0"></iframe>
+    <iframe id="frame" src="main3_1.php" width="830" height="490" frameborder="0"></iframe>
   </div>
     <div id="menuX" align='center' margin-top='0'>
   <ul id="menu-list"/>
@@ -28,10 +28,10 @@
    <div id="menu-line"></div>
   <script>
     function change1() {
-      document.getElementById("frame").src = "main3_1.html";
+      document.getElementById("frame").src = "main3_1.php";
     }
     function change2() {
-      document.getElementById("frame").src = "main3_2.html";
+      document.getElementById("frame").src = "main3_2.php";
     }
     // function change3() {
     //   document.getElementById("frame").src = "main3_3.html";
