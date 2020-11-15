@@ -23,13 +23,13 @@ $post = mysqli_fetch_assoc($result);
 
 
     <br/>
-    <table style="width:1000px;height:50px;border:5px #CCCCCC solid;">
+    <table style="width:630px;height:50px;border:5px #CCCCCC solid;">
         <tr>
             <td align="center" valign="middle" style="font-zise:15px;font-weight:bold;">글보기</td>
         </tr>
     </table>
     <br/>
-    <table cellspacing="1" style="width:1000px;height:50px;border:0px;background-color:#999999;">
+    <table cellspacing="1" style="width:630px;height:80px;border:0px;background-color:#999999;">
         <tr>
             <td align="center" valign="middle" style="width:200px;background-color:#CCCCCC;">글제목</td>
             <td align="left" valign="middle" style="width:800px;background-color:#FFFFFF;padding:5px;"><?php echo $post['post_title'];?></td>
@@ -43,6 +43,7 @@ $post = mysqli_fetch_assoc($result);
             <td align="left" valign="middle" style="width:800px;background-color:#FFFFFF;padding:5px;"><?php echo $post['post_datetime'];?></td>
         </tr>
     </table>
+    <br>
     <div >
       <?php echo $post['post_text'];?>
     </div>
