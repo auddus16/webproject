@@ -3,7 +3,7 @@ include("./dbconn_yj.php");  // DB연결을 위한 같은 경로의 dbconn.php�
 
 $mb_id				= trim($_GET['mb_id']); // 회원 아이디
 $mb_md5				= trim($_GET['mb_md5']); // 인증메일에서 넘어온 인증번호
-$mb_mail_certify_datetime	= date('Y-m-d H:i:s', time()); // 인증일
+$mb_mail_certify_datetime	= date('Y-m-d H:i:s'); // 인증일
 
 $sql = " SELECT mb_id, mb_mail_certify_code FROM member WHERE mb_id = '$mb_id' ";
 $result = mysqli_query($conn, $sql);

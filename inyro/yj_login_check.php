@@ -59,7 +59,7 @@ mysqli_close($conn); // 데이터베이스 접속 종료
 
 if(isset($_SESSION['ss_mb_id'])) { // 세션이 있다면 로그인 확인 페이지로 이동
 	echo "<script>alert('로그인 되었습니다.');</script>";
-	echo "<script>location.replace('./yj_login.php');</script>";
+	echo "<script>location.replace('./Main.php');</script>";
 }
 
 ?>

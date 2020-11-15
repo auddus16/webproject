@@ -19,7 +19,7 @@
             회원님의 성원에 보답하고자 더욱 더 열심히 하겠습니다.<br/>
             감사합니다.
         </p>
-        <a href="http://localhost/inyro/yj_pwupdate.php" target="_blank" style="display:block;padding:30px 0;background:#484848;color:#fff;text-decoration:none;text-align:center">비밀번호 재설정 바로가기</a>
+        <!-- <a href="http://localhost/inyro/yj_pwupdate.php" target="_blank" style="display:block;padding:30px 0;background:#484848;color:#fff;text-decoration:none;text-align:center">비밀번호 재설정 바로가기</a> -->
     </div>
 </div>
 

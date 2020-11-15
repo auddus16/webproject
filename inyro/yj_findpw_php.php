@@ -40,7 +40,7 @@ if($_POST["mb_id"] == "" || $_POST["mb_email"] == ""){
 
 				mailer('관리자', $mail_from, $mail_to, $subject, $content); // 메일 전송
 
-				echo "<script>alert('".$mb['mb_email']." 메일로 인증메일을 전송하였습니다.\\n".$mb['mb_email']." 메일로 메일인증을 받으셔야 비밀번호 재설정이 가능합니다.'); history.back();</script>";
+				echo "<script>alert('".$mb['mb_email']." 메일로 인증메일을 전송하였습니다.\\n메일로 메일인증을 받으셔야 비밀번호 재설정이 가능합니다.'); history.back();</script>";
 				exit;
 			// }
 			// echo "<script>location.replace('./yj_pwupdate.php');</script>";
