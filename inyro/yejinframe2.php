@@ -30,10 +30,29 @@
             include("./dbconn_pyj.php");
             $jb_sql = "SELECT * FROM post where post_category_id=2";
             $jb_result = mysqli_query( $conn, $jb_sql );
-            while( $jb_row = mysqli_fetch_array( $jb_result ) ) {
-              echo '<tr><td>'. $jb_row[ 'mb_id' ] . '</td><td>' . $jb_row[ 'post_title' ] . '</td><td>' . $jb_row[ 'post_datetime' ] . '</td></tr>';
-            }
-          ?>
+            while( $row = mysqli_fetch_array( $jb_result ) ) {
+            ?>
+            <tr>
+                    <td>
+                        <?php
+                            echo $row["mb_id"];
+                        ?>
+                    </td>
+                    <td>
+                        <?php
+                            echo "<a href='./pyj_look_post.php?index=".$row["post_title"]."'>";
+                            echo $row["post_title"];
+                        ?>
+                    </td>
+                    <td>
+                        <?php
+                            echo $row["post_datetime"];
+                        ?>
+                    </td>
+                </tr>
+                <?php
+              }
+               ?>
       </tbody>
     </table>
   </body>

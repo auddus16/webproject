@@ -9,7 +9,7 @@
   <body align="center">
     <h2>갤러리 게시판</h2>
     <br>
-    <button class="yjbtn" style="width:100px; height:30px; margin-right:10px" onclick="location.href='pyj_post.php'">작성하기</button>
+    <button class="yjbtn" style="width:100px; height:30px; margin-right:10px" onclick="location.href='yejinframe4.html'">작성하기</button>
     <br> <br> <br>
     <iframe src="yejinframe4.php" width=100% height=330px frameborder="0"></iframe>
   </body>

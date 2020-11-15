@@ -18,10 +18,10 @@ $mb_id=$_SESSION['ss_mb_id'];
 // $title = "글 작성하기";
 
 // $mb_id = trim($_POST['mb_id']);
-$post_title = trim($_POST['post_title']);
+$post_title2 = trim($_POST['post_title']);
 $post_category_id		= trim($_POST['post_category_id']);
 $post_datatime				= date('Y-m-d H:i:s', time());
-$post_text				= trim($_POST['post_text']);
+$post_text2				= trim($_POST['post_text']);
 $post_file	= trim($_POST['post_file']);
 $post_image	= trim($_POST['post_image']);
 $post_comment_count		= trim($_POST['post_comment_count']);
@@ -39,13 +39,13 @@ if (!$mb_id) {
 	exit;
 }
 
-if (!$post_title) {
-	echo "<script>alert('글 제목이 없습니다..');</script>";
+if (!$post_title2) {
+	echo "<script>alert('글 제목이 없습니다.');</script>";
 	echo "<script>location.replace('./yejin12.php');</script>";
 	exit;
 }
 
-if (!$post_text) {
+if (!$post_text2) {
 	echo "<script>alert('글 내용이 없습니다.');</script>";
 	echo "<script>location.replace('./yejin12.php');</script>";
 	exit;
@@ -68,7 +68,7 @@ if (!$post_text) {
 // 					 -- mb_datetime = '$mb_datetime' ";
 // echo $mb_name;
 
-$sql = "INSERT INTO post VALUES ('NULL', '$mb_id', '$post_title' , '$post_category_id', current_timestamp(), '$post_text', '$post_file', 'NULL', 20, 10, 23, current_timestamp(), current_timestamp(), '5','192.172.10.3')";
+$sql = "INSERT INTO post VALUES ('NULL', '$mb_id', '$post_title2' , '$post_category_id', current_timestamp(), '$post_text2', '$post_file', 'NULL', 20, 10, 23, current_timestamp(), current_timestamp(), '5','192.172.10.3')";
 
 $result = mysqli_query($conn, $sql);
 

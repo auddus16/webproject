@@ -42,10 +42,9 @@ $post = mysqli_fetch_assoc($result);
             <td align="center" valign="middle" style="width:200px;background-color:#CCCCCC;">작성일</td>
             <td align="left" valign="middle" style="width:800px;background-color:#FFFFFF;padding:5px;"><?php echo $post['post_datetime'];?></td>
         </tr>
-        <tr>
-            <td align="center" valign="middle" style="width:200px;background-color:#CCCCCC;">글내용</td>
-            <td align="left" valign="top" style="width:800px;background-color:#FFFFFF;padding:5px;"><?php echo $post['post_text'];?></td>
-        </tr>
     </table>
+    <div >
+      <?php echo $post['post_text'];?>
+    </div>
   </body>
 </html>
