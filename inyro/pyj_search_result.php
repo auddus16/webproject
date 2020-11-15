@@ -21,6 +21,7 @@
 </style>
   </head>
   <body>
+    <h4>검색 결과입니다.</h4>
     <table>
       <thead>
         <tr><th>아이디</th><th>제목</th><th>작성시간</th></tr>
