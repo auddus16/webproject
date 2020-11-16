@@ -24,10 +24,12 @@ if (!($password === $mb['mb_password'])) { // 존재하는 아이디인지, 입�
 	exit;
 }
 else{
-	$sql= "DELETE FROM post WHERE mb_id='$mb_id'";
-	$result=mysqli_query($conn, $sql);
+	mysqli_query($conn, "SET FOREIGN_KEY_CHECKS=0");
+	// $sql= "DELETE FROM post WHERE mb_id='$mb_id'";
+	// $result=mysqli_query($conn, $sql);
 	$sql= "DELETE FROM member WHERE mb_id='$mb_id'";
 	$result=mysqli_query($conn, $sql);
+	mysqli_query($conn, "SET FOREIGN_KEY_CHECKS=1");
 	echo"<script>alert('회원탈퇴 완료했습니다.');</script>";
 	echo"<script>location.replace('./Main.php');</script>";
 }
