@@ -30,6 +30,7 @@ else{
 	$sql= "DELETE FROM member WHERE mb_id='$mb_id'";
 	$result=mysqli_query($conn, $sql);
 	mysqli_query($conn, "SET FOREIGN_KEY_CHECKS=1");
+	session_unset();
 	session_destroy();
 	echo"<script>alert('회원탈퇴 완료했습니다.');</script>";
 	echo"<script>location.replace('./Main.php');</script>";
