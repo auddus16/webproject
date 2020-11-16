@@ -55,10 +55,8 @@ $post = mysqli_fetch_assoc($result);
 
       <div style="display:inline-block; vertical-align:middle;">
         <form action="pyj_delete_post.php" method=post>
-          <input class="mybt" type="button" value="수정하기" style="width:100px; height:30px; margin-right:10px;">
+          <input class="mybt" type="button" value="수정하기" onclick="location.href='pyj_modify_post.php?index=<?=$index?>'" style="width:100px; height:30px; margin-right:10px;">
           <input class="mybt" type="button" value="삭제하기" onclick="location.href='pyj_delete_post.php?index=<?=$index?>'" style="width:100px; height:30px; margin-right:10px;">
-          <!-- <a href="pyj_delete_post.php?no=<?=$row[0]?>" class="mybt" type="button" value="삭제하기" style="width:100px; height:30px; margin-right:10px;">삭제하기</a> -->
-
         </form>
       </div>
 
