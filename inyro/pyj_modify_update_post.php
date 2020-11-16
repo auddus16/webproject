@@ -31,6 +31,18 @@ $post_modify_datetime	= date('Y-m-d H:i:s', time());
 $post_delete_datetime	= date('Y-m-d H:i:s', time());
 $post_del				= trim($_POST['post_del']);
 $post_ip				= trim($_POST['post_ip']);
+echo "<script>alert('$post_title2')</script>";
+echo "<script>alert('$post_category_id')</script>";
+echo "<script>alert('$post_datatime')</script>";
+echo "<script>alert('$post_text2')</script>";
+echo "<script>alert('$post_file')</script>";
+echo "<script>alert('$post_image')</script>";
+echo "<script>alert('$post_comment_count')</script>";
+echo "<script>alert('$post_hit')</script>";
+echo "<script>alert('$post_like')</script>";
+echo "<script>alert('$post_delete_datetime')</script>";
+echo "<script>alert('$post_del')</script>";
+echo "<script>alert('$post_ip')</script>";
 
 
 if (!$mb_id) {
@@ -74,20 +86,32 @@ post_category_id		= '$post_category_id',
 post_datatime				= '$post_datatime',
 post_text				= '$post_text2',
 post_file	= '$post_file',
-post_image	= 'NULL',
-post_comment_count		= 20,
-post_hit		= 10,
-post_like				= 23,
-post_modify_datetime	= current_timestamp(),
+post_image	= '$post_image',
+post_comment_count		= '$post_comment_count',
+post_hit		= '$post_hit',
+post_like				= '$post_like',
+post_modify_datetime	= '$post_modify_datetime',
 post_delete_datetime	= '$post_delete_datetime',
-post_del				= '5',
-post_ip				= '192.172.10.3'
+post_del				= '$post_del',
+post_ip				= '$post_ip'
 WHERE mb_id='$mb_id'";
 
 $result = mysqli_query($conn, $sql);
 
 if($result == false){echo mysqli_connect_error($conn);}
-echo "헤당 글이 수정되었습니다.";
+echo "해당 글이 수정되었습니다.";
 
+echo "<script>alert('$post_title2')</script>";
+echo "<script>alert('$post_category_id')</script>";
+echo "<script>alert('$post_datatime')</script>";
+echo "<script>alert('$post_text2')</script>";
+echo "<script>alert('$post_file')</script>";
+echo "<script>alert('$post_image')</script>";
+echo "<script>alert('$post_comment_count')</script>";
+echo "<script>alert('$post_hit')</script>";
+echo "<script>alert('$post_like')</script>";
+echo "<script>alert('$post_delete_datetime')</script>";
+echo "<script>alert('$post_del')</script>";
+echo "<script>alert('$post_ip')</script>";
 mysqli_close($conn); // 데이터베이스 접속 종료
 ?>
