@@ -38,7 +38,7 @@ $modify_mb_info = '';
         <option text-align:center; value="4" <?php echo ($post['post_category_id'] == "갤러리") ? "selected" : "";?> >갤러리 </option>
       </select>
       <input  class="yjbt" style="position:absolute; top:172px; left:600px;   border:1px solid black;" type="file" name="post_file" value="<?php echo $post['post_file'] ?>" >
-      <input  cols="75" rows="15" placeholder="내용을 입력하세요." name="post_text" value="<?php echo $post['post_text'] ?>" >   <br>
+      <input  cols="1000" rows="1500" placeholder="내용을 입력하세요." name="post_text" value="<?php echo $post['post_text'] ?>" >   <br>
       <button class="yjbtn" onclick="parent.location.href='pyj_post_update.php'" style="width:100px; height:30px; margin-right:10px">등록하기</button>
   </pre>
   </body>
