@@ -4,7 +4,7 @@ include("./dbconn_my.php");  // DB연결을 위한 같은 경로의 dbconn.php�
 $mb_id = $_SESSION['ss_mb_id'];
 $pwd = trim($_POST['mb_password']);
 
-echo "<script>alert('$pwd');</script>";
+// echo "<script>alert('$pwd');</script>";
 
 $sql = " SELECT * FROM member WHERE mb_id = '$mb_id' "; // 회원 테이블에서 해당 아이디가 존재하는지 체크
 $result = mysqli_query($conn, $sql);
@@ -15,7 +15,7 @@ $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 $password = $row['mb_password'];
 
-echo "<script>alert('$password');</script>";
+// echo "<script>alert('$password');</script>";
 
 // if(isset($_SESSION['ss_mb_id'])) { // 세션이 있다면 로그인 확인 페이지로 이동
 // 	echo "<script>alert('session확인');</script>";

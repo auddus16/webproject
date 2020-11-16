@@ -3,7 +3,7 @@ include("./dbconn_my.php");  // DB연결을 위한 같은 경로의 dbconn.php�
 $mb_id = $_SESSION['ss_mb_id'];
 $pwd = trim($_POST['mb_password']);
 
-echo "<script>alert('$pwd');</script>";
+// echo "<script>alert('$pwd');</script>";
 
 $sql = " SELECT * FROM member WHERE mb_id = '$mb_id' "; // 회원 테이블에서 해당 아이디가 존재하는지 체크
 $result = mysqli_query($conn, $sql);
@@ -30,6 +30,7 @@ else{
 	$sql= "DELETE FROM member WHERE mb_id='$mb_id'";
 	$result=mysqli_query($conn, $sql);
 	mysqli_query($conn, "SET FOREIGN_KEY_CHECKS=1");
+	session_destroy();
 	echo"<script>alert('회원탈퇴 완료했습니다.');</script>";
 	echo"<script>location.replace('./Main.php');</script>";
 }

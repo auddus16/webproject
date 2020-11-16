@@ -42,8 +42,8 @@ include("./dbconn_my.php");
                   <option value=102 <?php echo ($mb['mb_major_id'] == "게임학과") ? "selected" : "";?>>게임학과</option>
                   <option value=103 <?php echo ($mb['mb_major_id'] == "휴먼지능공학과") ? "selected" : "";?>>휴먼지능공학과</option>
                 </select><br>
-                <label><input type="radio" name="mb_graduated" value= 1 <?php echo ($mb['mb_graduated'] == "재학생") ? "checked" : "";?> >재학생</label>
-                <label><input type="radio" name="mb_graduated" value= 2 <?php echo ($mb['mb_graduated'] == "졸업생") ? "checked" : "";?> >졸업생</label><br>
+                <label><input type="radio" name="mb_graduated" value= 1 <?php echo ($mb['mb_graduated'] == "1") ? "checked" : "";?> >재학생</label>
+                <label><input type="radio" name="mb_graduated" value= 2 <?php echo ($mb['mb_graduated'] == "2") ? "checked" : "";?> >졸업생</label><br>
 
                   <!-- <label for="checkcode"><b> 확인코드</b></label><br>
                   <input type="text" id="checkcode" name="checkcode" value="CS0020"style="width:500px; height:35px; margin-bottom:15px;" disabled><br> -->
