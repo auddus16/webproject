@@ -37,10 +37,10 @@ include("./dbconn_my.php");
 
                 <label for="major"><i class="fa fa-institution"></i><b>학과</b></label>
                 <select class="" name="mb_major_id" style="width:500px; height:35px; margin-bottom:15px;">
-                  <option value=100 <?php echo ($mb['mb_major_id'] == "컴퓨터과학") ? "selected" : "";?> >컴퓨터과학과</option>
-                  <option value=101 <?php echo ($mb['mb_major_id'] == "전기공학과") ? "selected" : "";?>>전기공학과</option>
-                  <option value=102 <?php echo ($mb['mb_major_id'] == "게임학과") ? "selected" : "";?>>게임학과</option>
-                  <option value=103 <?php echo ($mb['mb_major_id'] == "휴먼지능공학과") ? "selected" : "";?>>휴먼지능공학과</option>
+                  <option value=100 <?php echo ($mb['mb_major_id'] == "100") ? "selected" : "";?> >컴퓨터과학과</option>
+                  <option value=101 <?php echo ($mb['mb_major_id'] == "101") ? "selected" : "";?>>전기공학과</option>
+                  <option value=102 <?php echo ($mb['mb_major_id'] == "102") ? "selected" : "";?>>게임학과</option>
+                  <option value=103 <?php echo ($mb['mb_major_id'] == "103") ? "selected" : "";?>>휴먼지능공학과</option>
                 </select><br>
                 <label><input type="radio" name="mb_graduated" value= 1 <?php echo ($mb['mb_graduated'] == "1") ? "checked" : "";?> >재학생</label>
                 <label><input type="radio" name="mb_graduated" value= 2 <?php echo ($mb['mb_graduated'] == "2") ? "checked" : "";?> >졸업생</label><br>
