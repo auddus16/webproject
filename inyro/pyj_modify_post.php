@@ -3,7 +3,6 @@
 include("./dbconn_pyj.php");
 
 $mode = "insert";
-$title = "글 작성하기";
 $modify_mb_info = '';
 
 ?>
@@ -33,7 +32,6 @@ $modify_mb_info = '';
     }
     ?>
 
-<h2>글 작성하기</h2><br>
 <form action="./pyj_modify_update_post.php" align='middle' onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data">
   <pre>
       <input rows="70" type="text" name="post_title" style="width:500px; height:35px; margin-bottom:15px;" value="<?php echo $mb['post_title'] ?>" disabled>
