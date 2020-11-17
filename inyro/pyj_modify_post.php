@@ -29,7 +29,6 @@ $modify_mb_info = '';
     if($mb_id!=$mb['mb_id']){
         echo "<script>alert('수정권한이 없습니다.'); history.back(); </script>";
         exit;
-        <input rows="70" type="text" name="post_title" style="width:500px; height:35px; margin-bottom:15px;" value="<?php echo $mb['post_title'] ?>">
     }
     ?>
 
