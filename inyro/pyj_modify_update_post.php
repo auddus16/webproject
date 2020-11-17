@@ -23,12 +23,6 @@ $post_category_id		= trim($_POST['post_category_id']);
 $post_text2				= trim($_POST['post_text']);
 $post_file	= trim($_POST['post_file']);
 
-echo "<script>alert('$post_title2')</script>";
-echo "<script>alert('$post_category_id')</script>";
-echo "<script>alert('$post_text2')</script>";
-echo "<script>alert('$post_file')</script>";
-
-
 if (!$mb_id) {
 	echo "<script>alert('아이디가 넘어오지 않았습니다.');</script>";
 	exit;
@@ -72,7 +66,7 @@ WHERE mb_id='$mb_id'";
 $result = mysqli_query($conn, $sql);
 
 if($result == false){echo mysqli_connect_error($conn);}
-echo "해당 글이 수정되었습니다.";
+echo "<script>alert('수정되었습니다.')</script>";
 
 mysqli_close($conn); // 데이터베이스 접속 종료
 ?>
