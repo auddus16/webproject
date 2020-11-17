@@ -29,12 +29,13 @@ $modify_mb_info = '';
     if($mb_id!=$mb['mb_id']){
         echo "<script>alert('수정권한이 없습니다.'); history.back(); </script>";
         exit;
+        <input rows="70" type="text" name="post_title" style="width:500px; height:35px; margin-bottom:15px;" value="<?php echo $mb['post_title'] ?>">
     }
     ?>
 
 <form action="./pyj_modify_update_post.php" align='middle' onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data">
   <pre>
-      <input rows="70" type="text" name="post_title" style="width:500px; height:35px; margin-bottom:15px;" value="<?php echo $mb['post_title'] ?>" disabled>
+      <input rows="70" type="text" name="post_title" style="width:500px; height:35px; margin-bottom:15px;" value="<?php echo $mb['post_title'] ?>">
       <select name="post_category_id" style="position:absolute; top:170px; left:411px; width:175px; height:30px; ">
         <option text-align:center; value="1" <?php echo ($mb['post_category_id'] == "자유") ? "selected" : "";?> >자유 </option>
         <option text-align:center; value="2" <?php echo ($mb['post_category_id'] == "과제") ? "selected" : "";?> >과제 </option>

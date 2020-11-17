@@ -31,19 +31,16 @@ echo "<script>alert('$post_file')</script>";
 
 if (!$mb_id) {
 	echo "<script>alert('아이디가 넘어오지 않았습니다.');</script>";
-	echo "<script>location.replace('./yejin12.php');</script>";
 	exit;
 }
 
 if (!$post_title2) {
 	echo "<script>alert('글 제목이 없습니다.');</script>";
-	echo "<script>location.replace('./yejin12.php');</script>";
 	exit;
 }
 
 if (!$post_text2) {
 	echo "<script>alert('글 내용이 없습니다.');</script>";
-	echo "<script>location.replace('./yejin12.php');</script>";
 	exit;
 }
 
