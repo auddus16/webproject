@@ -2,7 +2,7 @@
 <?php
 include "./dbconn_yj.php";
 if($_POST["mb_name"] == "" || $_POST["mb_email"] == ""){
-		echo '<script> alert("항목을 입력하세요"); history.back();</script>';
+		echo '<script> alert("항목을 입력하세요."); history.back();</script>';
 	}else{
     $mb_name = trim($_POST['mb_name']);
     $mb_email = trim($_POST['mb_email']);
