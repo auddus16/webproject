@@ -42,7 +42,7 @@ if (!$mb_new_email) {
 // 	exit;
 // }
 
-echo $mb_new_name;
+// echo $mb_new_name;
 
 // $sql="UPDATE `member` SET `mb_studentnum` = '201811008', `mb_name` = '황명연', `mb_id` = 'auddus16', `mb_major_id` = '101', `mb_email` = 'auddus16@naver.com'
 // WHERE `member`.`mb_no` = 13";
