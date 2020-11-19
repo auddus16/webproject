@@ -59,7 +59,7 @@ WHERE mb_id='$mb_id' ";
 $result = mysqli_query($conn, $sql);
 
 if($result == false){echo mysqli_connect_error($conn);}
-echo "회원정보가 수정되었습니다.";
+
 echo"<script>location.replace('./my_profile.php');</script>";
 
 
