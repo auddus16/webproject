@@ -1,5 +1,5 @@
 <?php
-$mysql_host="192.168.35.123";
+$mysql_host="172.30.1.9";
 $mysql_user="auddus16";
 $mysql_password="1234";
 $mysql_db="inyroweb";
