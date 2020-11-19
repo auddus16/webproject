@@ -73,7 +73,7 @@ $sql = "INSERT INTO post VALUES ('NULL', '$mb_id', '$post_title2' , '$post_categ
 $result = mysqli_query($conn, $sql);
 
 if($result == false){echo mysqli_connect_error($conn);}
-
+exit;
 
 
 mysqli_close($conn); // 데이터베이스 접속 종료
