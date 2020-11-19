@@ -16,7 +16,7 @@
             아래의 주소를 클릭하시면 인증이 완료됩니다.<br/>
             <!-- <a href="<?php echo $certify_href ?>" target="_blank"><b><?php echo $certify_href ?></b></a><br/><br/> -->
 
-            <a location.href="./yj_email_certify.php" target="_blank"><b><?php echo $certify_href ?></b></a><br/><br/>
+            <a href="./yj_email_certify.php" target="_blank"><b><?php echo $certify_href ?></b></a><br/><br/>
 
             <!-- 회원님의 성원에 보답하고자 더욱 더 열심히 하겠습니다.<br/> -->
             감사합니다.
