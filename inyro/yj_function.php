@@ -19,7 +19,7 @@ function mailer($fname, $fmail, $to, $subject, $content)
     $mail->Host = "smtp.naver.com";
     $mail->Port = 465;
     $mail->Username = "yunjin3052@naver.com"; // 네이버메일 계정
-    $mail->Password = "dbswls99!"; // 네이버메일 비밀번호
+    $mail->Password = "yunjinee99"; // 네이버메일 비밀번호
 
     $mail->CharSet = 'UTF-8';
     $mail->From = $fmail;
