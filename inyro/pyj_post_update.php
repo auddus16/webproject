@@ -45,11 +45,11 @@ if (!$mb_id) {
 // 	exit;
 // }
 
-if (!$post_text2) {
-	echo "<script>alert('글 내용이 없습니다.');</script>";
-	echo "<script>location.replace('./yejin12.php');</script>";
-	exit;
-}
+// if (!$post_text2) {
+// 	echo "<script>alert('글 내용이 없습니다.');</script>";
+// 	echo "<script>location.replace('./yejin12.php');</script>";
+// 	exit;
+// }
 
 
 // $sql = " INSERT INTO member
