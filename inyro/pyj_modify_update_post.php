@@ -68,5 +68,6 @@ $result = mysqli_query($conn, $sql);
 if($result == false){echo mysqli_connect_error($conn);}
 echo "<script>alert('수정되었습니다.')</script>";
 
+
 mysqli_close($conn); // 데이터베이스 접속 종료
 ?>
