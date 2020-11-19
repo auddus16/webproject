@@ -47,6 +47,13 @@ if (!$mb_email) {
 	exit;
 }
 
+if ($mb_graduated == 0){
+	echo "<script>alert('재학 여부를 선택하지 않았습니다.');</script>";
+	echo "<script>location.replace('./yj_register.php');</script>";
+	exit;
+
+}
+
 $sql = " SELECT PASSWORD('$mb_password') AS mb_password "; // 입력한 비밀번호를 MySQL password() 함수를 이용해 암호화해서 가져옴
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
